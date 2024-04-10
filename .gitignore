@@ -46,3 +46,4 @@ __pycache__/
 *.rar
 *.tar
 *.zip
+/notes
