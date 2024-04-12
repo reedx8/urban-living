@@ -1,13 +1,51 @@
 .main {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
-  padding: 6rem;
+  /* justify-content: space-between; */
+  /* align-items: center; */
+  /* padding: 6rem; */
   min-height: 100vh;
+  width: 100vw;
 }
 
-.description {
+.heroSection {
+  background-image: url('./assets/heroBG.jpg');
+  background-size: cover;
+  /* want background to fill the width of viewport by stretching */
+  background-repeat: no-repeat;
+  background-position: center;
+
+
+
+  height: 730px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.bigLogo{
+  /* apply shadow to the logo */
+  filter: drop-shadow(0 0 0.4rem #ffffff70);
+  width: 500px;
+  height: 300px;
+}
+
+
+.introSection {
+  background-color: var(--darkgreen);
+  height: 500px;
+}
+
+
+
+
+
+
+
+
+
+/* boilerplate next.js bootstrapping code: */
+/* .description {
   display: inherit;
   justify-content: inherit;
   align-items: inherit;
@@ -108,7 +146,7 @@
 .logo {
   position: relative;
 }
-/* Enable hover only on non-touch devices */
+
 @media (hover: hover) and (pointer: fine) {
   .card:hover {
     background: rgba(var(--card-rgb), 0.1);
@@ -126,7 +164,6 @@
   }
 }
 
-/* Mobile */
 @media (max-width: 700px) {
   .content {
     padding: 4rem;
@@ -203,7 +240,7 @@
   }
 }
 
-/* Tablet and Smaller Desktop */
+Tablet and Smaller Desktop
 @media (min-width: 701px) and (max-width: 1120px) {
   .grid {
     grid-template-columns: repeat(2, 50%);
@@ -228,3 +265,4 @@
     transform: rotate(0deg);
   }
 }
+*/

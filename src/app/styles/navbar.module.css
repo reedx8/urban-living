@@ -1,0 +1,22 @@
+.navbar {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  display: flex;
+  justify-content: flex-end;
+  gap: 1rem;
+  align-items: center;
+  padding: 1rem 2rem;
+  /* background-color: #f8f9fa; */
+  background-color: var(--white);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.link {
+  /* font-weight: 400; */
+}
+
+.link:hover {
+  color: var(--gold);
+  transition: color 0.3s;
+}
