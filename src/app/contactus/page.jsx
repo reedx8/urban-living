@@ -21,6 +21,9 @@ export default function Contactus() {
             </section>
             <section className={styles.pageContent}>
                 <div className={styles.contactFormContainer}>
+                    <p className={styles.reqFieldText}>
+                        * indicates required fields.
+                    </p>
                     <ContactUsForm />
                 </div>
                 <div className={styles.contactInfoContainer}>

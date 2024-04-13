@@ -35,3 +35,10 @@
     margin-top: 20px;
     margin-bottom: 20px;
 }
+
+.reqFieldText {
+    /* color: red; */
+    font-size: 0.8rem;
+    margin-bottom: 10px;
+    opacity: 0.7;
+}
