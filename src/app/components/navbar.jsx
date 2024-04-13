@@ -1,6 +1,8 @@
 // 'use client';
 import Link from 'next/link';
 // import { useRouter } from 'next/navigation';
+import Image from 'next/image';
+import ava from '../assets/ava.png';
 import styles from '../styles/navbar.module.css';
 
 export default function Navbar() {
@@ -8,21 +10,26 @@ export default function Navbar() {
 
     return (
         <nav className={styles.navbar}>
-            <Link href='/' className={styles.link}>
-                HOME
-            </Link>
-            <Link href='/floorplans' className={styles.link}>
-                FLOOR PLANS
-            </Link>
-            <Link href='/photos' className={styles.link}>
-                PHOTOS
-            </Link>
-            <Link href='/amenities' className={styles.link}>
-                AMENITIES
-            </Link>
-            <Link href='/contactus' className={styles.link}>
-                CONTACT US
-            </Link>
+            <div className={styles.logo}>
+                <Image src={ava} alt='AVA logo' className={styles.avaLogo} />
+            </div>
+            <div className={styles.links}>
+                <Link href='/' className={styles.link}>
+                    HOME
+                </Link>
+                <Link href='/floorplans' className={styles.link}>
+                    FLOOR PLANS
+                </Link>
+                <Link href='/photos' className={styles.link}>
+                    PHOTOS
+                </Link>
+                <Link href='/amenities' className={styles.link}>
+                    AMENITIES
+                </Link>
+                <Link href='/contactus' className={styles.link}>
+                    CONTACT US
+                </Link>
+            </div>
         </nav>
     );
 }

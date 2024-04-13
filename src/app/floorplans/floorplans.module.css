@@ -1,3 +1,8 @@
 .main {
     width: 100vw;
 }
+
+.floorplansPic {
+    width: 100%;
+    height: auto;
+}

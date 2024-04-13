@@ -1,0 +1,55 @@
+/* body { background:rgb(30,30,40); } */
+.form {
+    max-width: 420px;
+    /* margin: 50px auto; */
+}
+
+.feedbackInput {
+    /* color: white; */
+    /* font-family: Helvetica, Arial, sans-serif; */
+    font-weight: 500;
+    /* font-size: 18px; */
+    border-radius: 5px;
+    line-height: 22px;
+    background-color: transparent;
+    /* border: 1px solid var(--khaki); */
+    border: 1px solid var(--darkgreen);
+    transition: all 0.3s;
+    padding: 13px;
+    margin-bottom: 15px;
+    width: 100%;
+    box-sizing: border-box;
+    outline: 0;
+}
+
+.feedbackInput:focus {
+    border: 2px solid var(--darkgreen);
+}
+
+.feedbackTextarea {
+    height: 150px;
+    line-height: 150%;
+    resize: vertical;
+    font-family: 'Archivo', Arial, Helvetica, sans-serif;
+}
+
+.submitButton {
+    /* font-family: 'Montserrat', Arial, Helvetica, sans-serif; */
+    width: 100%;
+    /* background: var(--khaki); */
+    background: var(--darkgreen);
+    border-radius: 5px;
+    border: 0;
+    cursor: pointer;
+    color: white;
+    font-size: 1rem;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    transition: all 0.3s;
+    margin-top: -4px;
+    /* font-weight: 700; */
+}
+.submitButton:hover {
+    background: var(--khaki);
+    /* background: var(--darkgreen); */
+}
