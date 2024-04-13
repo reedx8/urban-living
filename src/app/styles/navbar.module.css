@@ -24,12 +24,14 @@
 .activeLink {
     /* font-weight: 400; */
     font-size: 0.85rem;
-    opacity: 0.8;
+    /* opacity: 0.8; */
+    letter-spacing: 0.9px;
 }
 
 .activeLink {
     /* color: var(--gold); */
     color: var(--khaki);
+    /* opacity: 0.5; */
     /* font-weight: bold; */
 }
 
