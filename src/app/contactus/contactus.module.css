@@ -12,7 +12,8 @@
 .contactFormContainer {
     margin-top: 50px;
     margin-bottom: 50px;
-    background-color: #f9f9f9;
+    /* background-color: #f9f9f9; */
+    background-color: #f7f7f7;
     padding: 40px;
     border-radius: 5px;
     /* width: 500px; */
