@@ -40,7 +40,7 @@ export default function ContactUsForm() {
             <input
                 name='user_email'
                 type='email'
-                class={styles.feedbackInput}
+                className={styles.feedbackInput}
                 placeholder='Email*'
                 required
                 autoCapitalize='none'

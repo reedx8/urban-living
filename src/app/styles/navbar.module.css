@@ -20,13 +20,22 @@
     height: 29px;
 }
 
-.link {
+.link,
+.activeLink {
     /* font-weight: 400; */
     font-size: 0.85rem;
     opacity: 0.8;
 }
 
+.activeLink {
+    /* color: var(--gold); */
+    color: var(--khaki);
+    /* font-weight: bold; */
+}
+
 .link:hover {
-    color: var(--gold);
+    /* color: var(--gold); */
+    color: var(--khaki);
+    /* text-decoration: underline; */
     transition: color 0.3s;
 }
