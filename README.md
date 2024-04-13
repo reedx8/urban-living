@@ -20,3 +20,4 @@ See package.json -> dependencies for more.
 3. React Alice Carousel - https://www.npmjs.com/package/react-alice-carousel
     - Second option (not installed): https://www.npmjs.com/package/react-multi-carousel
     - third option (not installed): https://www.npmjs.com/package/react-simple-image-slider
+4. EmailJS - https://www.emailjs.com/
