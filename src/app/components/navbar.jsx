@@ -11,7 +11,13 @@ export default function Navbar() {
     return (
         <nav className={styles.navbar}>
             <div className={styles.logo}>
-                <Image src={ava} alt='AVA logo' className={styles.avaLogo} />
+                <Link href='/'>
+                    <Image
+                        src={ava}
+                        alt='AVA logo'
+                        className={styles.avaLogo}
+                    />
+                </Link>
             </div>
             <div className={styles.links}>
                 <Link href='/' className={styles.link}>
