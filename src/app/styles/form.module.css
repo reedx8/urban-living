@@ -51,5 +51,6 @@
 }
 .submitButton:hover {
     background: var(--khaki);
+    color: black;
     /* background: var(--darkgreen); */
 }
