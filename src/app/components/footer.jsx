@@ -51,7 +51,11 @@ export default function Footer() {
                     <span>
                         {' '}
                         | <Link href='/privacypolicy'>Privacy Policy</Link>
-                    </span>
+                    </span>{' '}
+                    | Developed by{' '}
+                    <a href='https://www.xvreed.com' target='_blank'>
+                        Xavier Reed
+                    </a>
                 </p>
             </div>
         </footer>
