@@ -20,6 +20,11 @@
     height: 29px;
 }
 
+.avaLogo:hover {
+    opacity: 0.5;
+    transition: opacity 0.3s;
+}
+
 .link,
 .activeLink {
     /* font-weight: 400; */

@@ -11,6 +11,8 @@
     --lightgreen: #656a60ff;
     --khaki: #c2b5a7ff;
     --white: #ffffffff;
+    --ltgreyBg: #f8f9fa;
+    --ltgreyBorder: #dee2e6;
 }
 
 * {

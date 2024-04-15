@@ -2,7 +2,107 @@
     width: 100vw;
 }
 
+.pageContent {
+    margin: 3rem;
+}
+
 .floorplansPic {
     width: 100%;
     height: auto;
+}
+
+.floorplansContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    /* align-items: center; */
+    /* margin-top: 20px; */
+}
+
+.headerText {
+    margin-bottom: 20px;
+}
+
+.unitCard {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* margin: 10px; */
+    padding: 10px;
+    border: 1.5px solid var(--ltgreyBorder);
+    gap: 10px;
+    border-radius: 10px;
+    /* width: 300px; */
+    /* height: 300px; */
+}
+
+.unitCard > h2 {
+    /* align-self: flex-start; */
+}
+
+.unitPic {
+    width: 250px;
+    height: auto;
+}
+
+.unitInfo {
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+    gap: 10px;
+    width: 100%;
+    /* margin: 10px; */
+    /* padding: 10px; */
+
+    /* border: 1px solid black; */
+    /* border-radius: 10px; */
+    /* width: 300px; */
+    /* height: 300px; */
+}
+
+.cardRow {
+    display: flex;
+    /* justify-content: space-between; */
+    align-items: center;
+    gap: 10px;
+}
+
+.priceRow {
+    display: flex;
+    justify-content: center;
+    background-color: var(--ltgreyBg);
+    width: 100%;
+    padding: 10px;
+    border: 1.5px solid var(--ltgreyBorder);
+    font-weight: bold;
+    /* border-color: black; */
+}
+.price {
+    font-size: 1.2rem;
+}
+
+.contactusButton {
+    /* background-color: #007bff; */
+    background-color: var(--darkgreen);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    cursor: pointer;
+    width: 100%;
+}
+
+.contactusButton:hover {
+    background-color: var(--khaki);
+    color: black;
+    transition: background-color 0.3s;
+}
+
+.icons {
+    height: 20px;
+    width: 20px;
+    margin-right: 5px;
 }
