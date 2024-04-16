@@ -8,6 +8,7 @@ import starIcon from '../assets/icons/star.png';
 import pointIcon from '../assets/icons/point.png';
 import verticalLine from '../assets/icons/verticalLine.png';
 import Link from 'next/link';
+import avaLogo from '../assets/ava.png';
 
 export default function FloorplansModal({ isOpen, onClose, unit }) {
     if (!isOpen) return null;
@@ -29,7 +30,16 @@ export default function FloorplansModal({ isOpen, onClose, unit }) {
                         height={500}
                     />
                     <div className={styles.unitInfo}>
-                        <h1>{unit.name}</h1>
+                        <div className={styles.unitHeader}>
+                            <h1>{unit.name}</h1>
+                            <Image
+                                src={avaLogo}
+                                alt='ava logo'
+                                width={33}
+                                height={24}
+                                className={styles.avaLogo}
+                            />
+                        </div>
                         <div className={styles.modalRow}>
                             <Image
                                 src={bedIcon}

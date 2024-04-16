@@ -131,3 +131,13 @@
     color: black;
     transition: background-color 0.3s;
 }
+
+.unitHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.avaLogo {
+    /* align-self: flex-end; */
+}
