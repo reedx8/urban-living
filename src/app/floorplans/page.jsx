@@ -1,5 +1,5 @@
 'use client';
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import Image from 'next/image';
 import floorplans from '../assets/floorplans.png';
 import styles from './floorplans.module.css';
@@ -104,11 +104,13 @@ const units = [
 
 export default function Floorplans() {
     const [openModal, setOpenModal] = useState(false);
+    const [currentUnit, setCurrentUnit] = useState(null);
+
     // const imageName = '';
     // const imagePath =  `../assets/floorplans/${imageName}.jpg`;
 
     // Modal for more info on a floorplan
-    function handleImageClick() {
+    function handleImageClick(e) {
         setOpenModal(true);
     }
 
@@ -138,7 +140,10 @@ export default function Floorplans() {
                                 src={unit.image}
                                 alt={unit.name}
                                 className={styles.unitPic}
-                                onClick={handleImageClick}
+                                onClick={() => {
+                                    setCurrentUnit(unit);
+                                    handleImageClick();
+                                }}
                                 width={250}
                                 height={250}
                             />
@@ -193,7 +198,11 @@ export default function Floorplans() {
                 </div>
             </section>
             {openModal && (
-                <FloorplansModal isOpen={openModal} onClose={handleClose} />
+                <FloorplansModal
+                    isOpen={openModal}
+                    onClose={handleClose}
+                    unit={currentUnit}
+                />
             )}
         </main>
     );

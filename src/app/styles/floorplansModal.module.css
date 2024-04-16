@@ -23,11 +23,76 @@
 }
 
 .modal {
-    width: 200px;
-    height: 200px;
+    /* width: 200px; */
+    /* height: 200px; */
     background-color: white;
     border-radius: 5px;
+    display: flex;
+    padding: 1.5rem;
+    gap: 1rem;
 }
+
+.modalRow {
+    display: flex;
+    align-items: center;
+    /* background-color: var(--ltgreyBg); */
+}
+.modalRow2 {
+    display: flex;
+    justify-content: center;
+    /* background-color: var(--ltgreyBg); */
+}
+
+.unitInfo {
+    display: flex;
+    flex-direction: column;
+    /* gap: 10px; */
+    justify-content: space-between;
+}
+
+.unitInfo > h1 {
+    color: var(--khaki);
+    margin-bottom: 1.5rem;
+    letter-spacing: 1px;
+}
+
+.unitInfo > h2 {
+    margin-top: 1.5rem;
+    /* letter-spacing: 1px; */
+}
+
+.unitPic {
+    border: 1px solid black;
+}
+
+
+.specialAmenetie {
+    border: 1px solid var(--ltgreyBorder);
+    /* padding: 0.5rem; */
+    display: flex;
+}
+
+.iconBg {
+    background-color: var(--ltgreyBg);
+    /* background-color: red; */
+    /* height: 100%; */
+    /* width: 20px; */
+    padding: 0.4rem;
+    /* border-radius: 50%; */
+}
+
+.specialAmenetie > p {
+    padding: 0.4rem;
+}
+
+.icons {
+    margin-right: 5px;
+}
+
+.pointIcon {
+    margin-right: 0.5rem;
+}
+
 
 .closeModal {
     cursor: pointer;
@@ -44,7 +109,24 @@
     transition: background-color 0.3s;
 }
 
-.icons {
+.closeIcon {
     height: 70%;
     width: 70%;
+}
+
+.contactusButton {
+    /* background-color: #007bff; */
+    background-color: var(--darkgreen);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    cursor: pointer;
+    width: 100%;
+}
+
+.contactusButton:hover {
+    background-color: var(--khaki);
+    color: black;
+    transition: background-color 0.3s;
 }
