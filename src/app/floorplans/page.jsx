@@ -1,24 +1,28 @@
+'use client';
+import { useState } from 'react';
 import Image from 'next/image';
 import floorplans from '../assets/floorplans.png';
 import styles from './floorplans.module.css';
-import unit1 from '../assets/floorplans/unit1.jpg';
-import unit2 from '../assets/floorplans/unit2.jpg';
-import unit3 from '../assets/floorplans/unit3.jpg';
-import unit4 from '../assets/floorplans/unit4.jpg';
-import unit5 from '../assets/floorplans/unit5.jpg';
-import unit6 from '../assets/floorplans/unit6.jpg';
-import unit7 from '../assets/floorplans/unit7.jpg';
-import unit8 from '../assets/floorplans/unit8.jpg';
-import unit9 from '../assets/floorplans/unit9.jpg';
+// import unit1 from '../assets/floorplans/unit1.jpg';
+// import unit2 from '../assets/floorplans/unit2.jpg';
+// import unit3 from '../assets/floorplans/unit3.jpg';
+// import unit4 from '../assets/floorplans/unit4.jpg';
+// import unit5 from '../assets/floorplans/unit5.jpg';
+// import unit6 from '../assets/floorplans/unit6.jpg';
+// import unit7 from '../assets/floorplans/unit7.jpg';
+// import unit8 from '../assets/floorplans/unit8.jpg';
+// import unit9 from '../assets/floorplans/unit9.jpg';
 import bath from '../assets/icons/bath.png';
 import bed from '../assets/icons/bed.png';
 import sqft from '../assets/icons/dim.png';
 import Link from 'next/link';
+import FloorplansModal from '../components/floorplansModal';
 
 const units = [
     {
         name: 'Unit 1',
-        image: unit1,
+        // image: unit1,
+        image: '/floorplans/unit1.jpg',
         price: '$',
         bed: '1',
         bath: '1',
@@ -26,7 +30,8 @@ const units = [
     },
     {
         name: 'Unit 2',
-        image: unit2,
+        // image: unit2,
+        image: '/floorplans/unit2.jpg',
         price: '$',
         bed: '1',
         bath: '1',
@@ -34,7 +39,8 @@ const units = [
     },
     {
         name: 'Unit 3',
-        image: unit3,
+        // image: unit3,
+        image: '/floorplans/unit3.jpg',
         price: '$',
         bed: '1',
         bath: '1',
@@ -42,7 +48,8 @@ const units = [
     },
     {
         name: 'Unit 4',
-        image: unit4,
+        // image: unit4,
+        image: '/floorplans/unit4.jpg',
         price: '$',
         bed: '1',
         bath: '1',
@@ -50,7 +57,8 @@ const units = [
     },
     {
         name: 'Unit 5',
-        image: unit5,
+        // image: unit5,
+        image: '/floorplans/unit5.jpg',
         price: '$',
         bed: '1',
         bath: '1',
@@ -58,7 +66,8 @@ const units = [
     },
     {
         name: 'Unit 6',
-        image: unit6,
+        // image: unit6,
+        image: '/floorplans/unit6.jpg',
         price: '$',
         bed: '1',
         bath: '1',
@@ -66,7 +75,8 @@ const units = [
     },
     {
         name: 'Unit 7',
-        image: unit7,
+        // image: unit7,
+        image: '/floorplans/unit7.jpg',
         price: '$',
         bed: '1',
         bath: '1',
@@ -74,7 +84,8 @@ const units = [
     },
     {
         name: 'Unit 8',
-        image: unit8,
+        // image: unit8,
+        image: '/floorplans/unit8.jpg',
         price: '$',
         bed: '1',
         bath: '1',
@@ -82,7 +93,8 @@ const units = [
     },
     {
         name: 'Unit 9',
-        image: unit9,
+        // image: unit9,
+        image: '/floorplans/unit9.jpg',
         price: '$',
         bed: '1',
         bath: '1',
@@ -91,11 +103,22 @@ const units = [
 ];
 
 export default function Floorplans() {
-    function handleContactUsClick() {
-        // navigate to contactus page
+    const [openModal, setOpenModal] = useState(false);
+    // const imageName = '';
+    // const imagePath =  `../assets/floorplans/${imageName}.jpg`;
+
+    // Modal for more info on a floorplan
+    function handleImageClick() {
+        setOpenModal(true);
     }
+
+    function handleClose() {
+        setOpenModal(false);
+    }
+
     return (
         <main className={styles.main}>
+            {/* {imageClick && <FloorplansModal />} */}
             <section>
                 <Image
                     src={floorplans}
@@ -115,6 +138,9 @@ export default function Floorplans() {
                                 src={unit.image}
                                 alt={unit.name}
                                 className={styles.unitPic}
+                                onClick={handleImageClick}
+                                width={250}
+                                height={250}
                             />
                             <div className={styles.unitInfo}>
                                 {/* <h2>{unit.name}</h2> */}
@@ -166,6 +192,9 @@ export default function Floorplans() {
                     ))}
                 </div>
             </section>
+            {openModal && (
+                <FloorplansModal isOpen={openModal} onClose={handleClose} />
+            )}
         </main>
     );
 }
