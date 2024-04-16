@@ -24,7 +24,7 @@ const units = [
         // image: unit1,
         image: '/floorplans/unit1.jpg',
         price: '$',
-        bed: '1',
+        bed: '1 Bed',
         bath: '1',
         sqft: '505',
     },
@@ -33,7 +33,7 @@ const units = [
         // image: unit2,
         image: '/floorplans/unit2.jpg',
         price: '$',
-        bed: '1',
+        bed: '1 Bed',
         bath: '1',
         sqft: '608',
     },
@@ -42,7 +42,7 @@ const units = [
         // image: unit3,
         image: '/floorplans/unit3.jpg',
         price: '$',
-        bed: '1',
+        bed: '1 Bed',
         bath: '1',
         sqft: '639',
     },
@@ -51,7 +51,7 @@ const units = [
         // image: unit4,
         image: '/floorplans/unit4.jpg',
         price: '$',
-        bed: '1',
+        bed: '1 Bed',
         bath: '1',
         sqft: '513',
     },
@@ -60,7 +60,7 @@ const units = [
         // image: unit5,
         image: '/floorplans/unit5.jpg',
         price: '$',
-        bed: '1',
+        bed: '1 Bed',
         bath: '1',
         sqft: '742',
     },
@@ -69,7 +69,7 @@ const units = [
         // image: unit6,
         image: '/floorplans/unit6.jpg',
         price: '$',
-        bed: '1',
+        bed: '1 Bed',
         bath: '1',
         sqft: '685',
     },
@@ -78,7 +78,7 @@ const units = [
         // image: unit7,
         image: '/floorplans/unit7.jpg',
         price: '$',
-        bed: '1',
+        bed: '1 Bed',
         bath: '1',
         sqft: '470',
     },
@@ -87,7 +87,7 @@ const units = [
         // image: unit8,
         image: '/floorplans/unit8.jpg',
         price: '$',
-        bed: '1',
+        bed: 'Studio',
         bath: '1',
         sqft: '384',
     },
@@ -96,7 +96,7 @@ const units = [
         // image: unit9,
         image: '/floorplans/unit9.jpg',
         price: '$',
-        bed: '1',
+        bed: '1 Bed',
         bath: '1',
         sqft: '742',
     },
@@ -160,7 +160,7 @@ export default function Floorplans() {
                                             alt='bed icon'
                                             className={styles.icons}
                                         />
-                                        {unit.bed} Bed
+                                        {unit.bed}
                                     </p>
                                     <p>
                                         <Image
