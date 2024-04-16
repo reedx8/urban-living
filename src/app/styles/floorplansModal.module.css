@@ -2,9 +2,9 @@
     width: 100vw;
     height: 100vh;
     background-color: rgba(0, 0, 0, 0.6);
+    backdrop-filter: blur(2px);
     z-index: 10000;
 
-    /* // cover entire viewport with black background */
     position: fixed;
     top: 0;
     left: 0;
@@ -17,19 +17,19 @@
     align-items: center;
 }
 
+/* includes modal and close button */
 .modalContainer {
     display: flex;
     /* pointer-events: none; */
 }
 
 .modal {
-    /* width: 200px; */
-    /* height: 200px; */
     background-color: white;
     border-radius: 5px;
     display: flex;
     padding: 1.5rem;
     gap: 1rem;
+    box-shadow: 0 10px 4px rgba(0, 0, 0, 0.1);
 }
 
 .modalRow {
@@ -63,6 +63,7 @@
 
 .unitPic {
     border: 1px solid black;
+    border-radius: 5px;
 }
 
 
