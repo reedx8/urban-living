@@ -22,7 +22,7 @@ const units = [
     {
         name: 'Unit 1',
         // image: unit1,
-        image: '/floorplans/unit1.jpg',
+        image: '/floorplans/unit1.jpg', // dynamic imports
         price: '$',
         bed: '1 Bed',
         bath: '1',
