@@ -1,6 +1,5 @@
 import Image from 'next/image';
 import styles from './page.module.css';
-// import bigLogo from './assets/bigLogo.png';
 import bigLogo from '/public/bigLogo.png';
 
 export default function Home() {
