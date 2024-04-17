@@ -21,3 +21,4 @@ See package.json -> dependencies for more.
     - Second option (not installed): https://www.npmjs.com/package/react-multi-carousel
     - third option (not installed): https://www.npmjs.com/package/react-simple-image-slider
 4. EmailJS - https://www.emailjs.com/
+5. Framer Motion - https://www.framer.com/motion/
