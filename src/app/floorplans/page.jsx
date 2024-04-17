@@ -18,6 +18,7 @@ import bed from '../assets/icons/bed.png';
 import sqft from '../assets/icons/dim.png';
 import Link from 'next/link';
 import FloorplansModal from '../components/floorplansModal';
+import { motion } from 'framer-motion';
 
 const units = [
     {
@@ -135,66 +136,75 @@ export default function Floorplans() {
                 </div>
                 <div className={styles.floorplansContainer}>
                     {units.map((unit) => (
-                        <div key={unit.name} className={styles.unitCard}>
-                            <h2>{unit.name}</h2>
-                            <Image
-                                src={unit.image}
-                                alt={unit.name}
-                                className={styles.unitPic}
-                                onClick={() => {
-                                    setCurrentUnit(unit);
-                                    handleImageClick();
-                                }}
-                                width={250}
-                                height={250}
-                            />
-                            <div className={styles.unitInfo}>
-                                {/* <h2>{unit.name}</h2> */}
-                                <div className={styles.priceRow}>
-                                    {/* <p>Starting at <span className={styles.prive}>{unit.price}</span></p> */}
-                                    <p>
-                                        Starting at{' '}
-                                        <span className={styles.price}>
-                                            $1,800
-                                        </span>
-                                    </p>
-                                </div>
-                                <div className={styles.cardRow}>
-                                    <p>
-                                        <Image
-                                            src={bed}
-                                            alt='bed icon'
-                                            className={styles.icons}
-                                        />
-                                        {unit.bed}
-                                    </p>
-                                    <p>
-                                        <Image
-                                            src={bath}
-                                            alt='bath icon'
-                                            className={styles.icons}
-                                        />
-                                        {unit.bath} Bath
-                                    </p>
-                                </div>
-                                <p>
-                                    <Image
-                                        src={sqft}
-                                        alt='sqft icon'
-                                        className={styles.icons}
-                                    />
-                                    {unit.sqft} Sq. Ft.
-                                </p>
-                            </div>
-                            <Link href='/contactus' style={{ width: '100%' }}>
-                                <input
-                                    type='button'
-                                    value='CONTACT US'
-                                    className={styles.contactusButton}
-                                    /* Just navigate to contactus page for now */
+                        <motion.div
+                            initial={{ y: 70 }}
+                            whileInView={{ y: 0 }}
+                            transition={{ ease: 'easeInOut', duration: 0.5 }}
+                        >
+                            <div key={unit.name} className={styles.unitCard}>
+                                <h2>{unit.name}</h2>
+                                <Image
+                                    src={unit.image}
+                                    alt={unit.name}
+                                    className={styles.unitPic}
+                                    onClick={() => {
+                                        setCurrentUnit(unit);
+                                        handleImageClick();
+                                    }}
+                                    width={250}
+                                    height={250}
                                 />
-                            </Link>
-                        </div>
+                                <div className={styles.unitInfo}>
+                                    {/* <h2>{unit.name}</h2> */}
+                                    <div className={styles.priceRow}>
+                                        {/* <p>Starting at <span className={styles.prive}>{unit.price}</span></p> */}
+                                        <p>
+                                            Starting at{' '}
+                                            <span className={styles.price}>
+                                                $1,800
+                                            </span>
+                                        </p>
+                                    </div>
+                                    <div className={styles.cardRow}>
+                                        <p>
+                                            <Image
+                                                src={bed}
+                                                alt='bed icon'
+                                                className={styles.icons}
+                                            />
+                                            {unit.bed}
+                                        </p>
+                                        <p>
+                                            <Image
+                                                src={bath}
+                                                alt='bath icon'
+                                                className={styles.icons}
+                                            />
+                                            {unit.bath} Bath
+                                        </p>
+                                    </div>
+                                    <p>
+                                        <Image
+                                            src={sqft}
+                                            alt='sqft icon'
+                                            className={styles.icons}
+                                        />
+                                        {unit.sqft} Sq. Ft.
+                                    </p>
+                                </div>
+                                <Link
+                                    href='/contactus'
+                                    style={{ width: '100%' }}
+                                >
+                                    <input
+                                        type='button'
+                                        value='CONTACT US'
+                                        className={styles.contactusButton}
+                                        /* Just navigate to contactus page for now */
+                                    />
+                                </Link>
+                            </div>
+                        </motion.div>
                     ))}
                 </div>
             </section>
