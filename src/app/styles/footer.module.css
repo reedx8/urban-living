@@ -5,6 +5,8 @@
     padding: 2rem;
     font-size: 0.85rem;
     width: 100vw;
+    overflow-x: hidden;
+    max-width: 100%;
 }
 /* set text opacity in footer to 0.8 */
 .footerSection p {
@@ -15,6 +17,7 @@
     display: flex;
     justify-content: space-between;
 }
+
 .copyRight {
     display: flex;
     /* justify-content: center; */
@@ -27,7 +30,7 @@
 .footerRight {
     display: flex;
     flex-direction: column;
-    gap: 1rem;
+    /* gap: 1rem; */
     justify-content: space-between;
 }
 

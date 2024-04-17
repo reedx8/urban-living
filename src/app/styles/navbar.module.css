@@ -13,6 +13,7 @@
 
     background: rgba(255, 255, 255, 0.6);
     backdrop-filter: blur(10px);
+    max-width: 100%;
 }
 
 .links {
@@ -21,8 +22,10 @@
 }
 
 .avaLogo {
-    width: 40px;
-    height: 29px;
+    /* width: 40px; */
+    /* height: 29px; */
+    width: 50px;
+    height: auto;
 }
 
 .avaLogo:hover {

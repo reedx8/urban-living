@@ -1,5 +1,5 @@
 .main {
-    width: 100vw;
+    /* width: 100vw; */
     /* display: flex; */
     /* flex-direction: column; */
 }
@@ -9,7 +9,7 @@
 }
 
 .floorplansPic {
-    width: 100%;
+    width: 100vw;
     height: auto;
 }
 
