@@ -1,5 +1,5 @@
 import Image from 'next/image';
-import amenities from '../assets/amenities.png';
+import amenitiesBanner from '/public/banners/amenities.png';
 import styles from './amenities.module.css';
 
 export default function Amenities() {
@@ -7,8 +7,8 @@ export default function Amenities() {
         <main>
             <section>
                 <Image
-                    src={amenities}
-                    alt='Amenities header picture'
+                    src={amenitiesBanner}
+                    alt='Amenities banner picture'
                     className={styles.amenitiesPic}
                 />
             </section>

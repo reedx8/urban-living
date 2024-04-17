@@ -4,7 +4,8 @@ import { useState, useEffect } from 'react';
 // import { useRouter } from 'next/navigation';
 import { usePathname, useSearchParams } from 'next/navigation';
 import Image from 'next/image';
-import ava from '../assets/ava.png';
+// import ava from '../assets/ava.png';
+import avaLogo from '/public/avaLogo.png';
 import styles from '../styles/navbar.module.css';
 // import { useEffect } from 'react';
 
@@ -22,7 +23,7 @@ export default function Navbar() {
             <div className={styles.logo}>
                 <Link href='/'>
                     <Image
-                        src={ava}
+                        src={avaLogo}
                         alt='AVA logo'
                         className={styles.avaLogo}
                     />

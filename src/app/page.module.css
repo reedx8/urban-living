@@ -9,7 +9,8 @@
 }
 
 .heroSection {
-    background-image: url('./assets/heroBG.jpg');
+    /* background-image: url('./assets/heroBG.jpg'); */
+    background-image: url('/heroBG.jpg');
     background-size: cover;
     /* want background to fill the width of viewport by stretching */
     background-repeat: no-repeat;

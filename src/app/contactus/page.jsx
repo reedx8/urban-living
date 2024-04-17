@@ -6,7 +6,7 @@ import location from '../assets/icons/location.png';
 import location2 from '../assets/icons/location2.png';
 import time from '../assets/icons/time.png';
 import time2 from '../assets/icons/time2.png';
-import contactus from '../assets/contactus.png';
+import contactusBanner from '/public/banners/contactus.png';
 import styles from './contactus.module.css';
 
 export default function Contactus() {
@@ -14,8 +14,8 @@ export default function Contactus() {
         <main>
             <section>
                 <Image
-                    src={contactus}
-                    alt='Contact Us header picture'
+                    src={contactusBanner}
+                    alt='Contact us banner picture'
                     className={styles.contactusPic}
                 />
             </section>
