@@ -104,6 +104,7 @@
     padding: 10px;
     cursor: pointer;
     width: 100%;
+    font-size: 0.85rem;
 }
 
 .contactusButton:hover {

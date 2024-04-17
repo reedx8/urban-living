@@ -66,7 +66,6 @@
     border-radius: 5px;
 }
 
-
 .specialAmenetie {
     border: 1px solid var(--ltgreyBorder);
     /* padding: 0.5rem; */
@@ -93,7 +92,6 @@
 .pointIcon {
     margin-right: 0.5rem;
 }
-
 
 .closeModal {
     cursor: pointer;
@@ -124,6 +122,7 @@
     padding: 10px;
     cursor: pointer;
     width: 100%;
+    font-size: 0.85rem;
 }
 
 .contactusButton:hover {

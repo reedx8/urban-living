@@ -1,48 +1,43 @@
 .main {
-  display: flex;
-  flex-direction: column;
-  /* justify-content: space-between; */
-  /* align-items: center; */
-  /* padding: 6rem; */
-  min-height: 100vh;
-  /* width: 100vw; */ /* this causes horizontal scroll */
+    display: flex;
+    flex-direction: column;
+    /* justify-content: space-between; */
+    /* align-items: center; */
+    /* padding: 6rem; */
+    min-height: 100vh;
+    /* width: 100vw; */ /* this causes horizontal scroll */
 }
 
 .heroSection {
-  background-image: url('./assets/heroBG.jpg');
-  background-size: cover;
-  /* want background to fill the width of viewport by stretching */
-  background-repeat: no-repeat;
-  background-position: center;
+    background-image: url('./assets/heroBG.jpg');
+    background-size: cover;
+    /* want background to fill the width of viewport by stretching */
+    background-repeat: no-repeat;
+    background-position: center;
 
+    /* gives heroBG a simple parallax effect */
+    background-attachment: fixed;
 
+    /* height = 100% of viewport height - 70px (height of navbar) */
+    height: calc(100vh - 70px);
 
-  height: 730px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+    /* height: 730px; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.bigLogo{
-  /* apply shadow to the logo */
-  filter: drop-shadow(0 0 0.4rem #ffffff70);
-  width: 500px;
-  height: 300px;
+.bigLogo {
+    /* apply shadow to the logo */
+    filter: drop-shadow(0 0 0.4rem #ffffff70);
+    width: 500px;
+    height: 300px;
 }
-
 
 .introSection {
-  background-color: var(--darkgreen);
-  height: 500px;
+    background-color: var(--darkgreen);
+    height: 500px;
 }
-
-
-
-
-
-
-
-
 
 /* boilerplate next.js bootstrapping code: */
 /* .description {

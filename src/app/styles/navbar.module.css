@@ -14,6 +14,7 @@
     background: rgba(255, 255, 255, 0.6);
     backdrop-filter: blur(10px);
     max-width: 100%;
+    height: 70px; /* assures navbar is always 70px across all devices/browsers (hero pic on home page depends on this value) */
 }
 
 .links {
