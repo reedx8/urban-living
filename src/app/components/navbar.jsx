@@ -24,6 +24,8 @@ export default function Navbar() {
                         src={avaLogo}
                         alt='AVA logo'
                         className={styles.avaLogo}
+                        width={40}
+                        height={'auto'}
                     />
                     {/* <AvaLogoSVG /> */}
                 </Link>

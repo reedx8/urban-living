@@ -1,3 +1,4 @@
+'use client';
 import React, { useState } from 'react';
 import styles from '../styles/scrollButton.module.css';
 import Image from 'next/image';
@@ -24,7 +25,10 @@ export default function ScrollButon() {
         });
     };
 
-    window.addEventListener('scroll', toggleVisible);
+    // avoids window being undefined (ReferenceError)
+    if (typeof window !== 'undefined') {
+        window.addEventListener('scroll', toggleVisible);
+    }
 
     return (
         <button
