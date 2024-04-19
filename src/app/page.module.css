@@ -184,7 +184,7 @@
     background-clip: text;
     color: #c39f75;
     text-transform: uppercase;
-    font-style: italic;
+    /* font-style: italic; */
 
     /*
     background-color: var(--gold);
@@ -205,7 +205,7 @@
     /* filter: drop-shadow(0 0 0.5rem black); */
 }
 
-.amenitiesButton {
+.buttonStyle {
     /* background-color: #007bff; */
     background-color: var(--darkgreen);
     color: white;
@@ -216,13 +216,41 @@
     font-size: 0.85rem;
 
     /* font-size: 1rem; */
-    font-weight: 500;
+    font-weight: 600;
     box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
 }
 
-.amenitiesButton:hover {
+.buttonStyle:hover {
     background-color: var(--khaki);
     color: black;
     transition: background-color 0.3s;
     box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
+}
+
+.superTextContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    margin-bottom: 20px;
+}
+.superText {
+    /* color: white; */
+    font-weight: 600;
+    font-size: 0.9rem;
+    letter-spacing: 0.5rem;
+    background: linear-gradient(135deg, #d2b69f 0, #a47947 100%);
+    background: -webkit-linear-gradient(45deg, #d2b69f 0, #a47947 100%);
+    background: -moz-linear-gradient(45deg, #d2b69f 0, #a47947 100%);
+    -webkit-text-fill-color: transparent !important;
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: #c39f75;
+}
+.superLine {
+    width: 300px;
+    height: 0.5px;
+    background-color: white;
+    /* border: 0.1px solid white; */
 }

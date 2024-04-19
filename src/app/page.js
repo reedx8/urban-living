@@ -9,6 +9,9 @@ import unitsIcon from '/public/icons/units.png';
 import busIcon from '/public/icons/bus.png';
 import eatIcon from '/public/icons/eat2.png';
 import shopIcon from '/public/icons/shop.png';
+import doubleArrowIcon from '/public/icons/doubleArrow.png';
+import blackLine from '/public/icons/blackLine.png';
+import whiteLine from '/public/icons/whiteLine.png';
 
 export default function Home() {
     return (
@@ -20,16 +23,36 @@ export default function Home() {
                     className={styles.bigLogo}
                 />
                 <Link href='/contactus'>
-                    <input
-                        type='button'
-                        value='CONTACT US'
-                        className={styles.amenitiesButton}
-                    />
+                    <button
+                        // type='button'
+                        // value='CONTACT US'
+                        className={styles.buttonStyle}
+                    >
+                        <p>CONTACT US</p>
+                        <Image
+                            src={doubleArrowIcon}
+                            width={15}
+                            height={15}
+                            alt='contact us button'
+                            style={{ marginLeft: '4px' }}
+                        />
+                    </button>
                 </Link>
             </section>
             <div className={styles.pageContent}>
                 <section className={styles.introSection}>
                     <div className={styles.introContainer}>
+                        <div className={styles.superTextContainer}>
+                            <p className={styles.superText}>OUR PROMISE</p>
+                            <div className={styles.superLine}></div>
+
+                            {/* <Image
+                                src={whiteLine}
+                                alt='White Line'
+                                width={80}
+                                height={20}
+                            /> */}
+                        </div>
                         <h2
                             className={styles.h2Text}
                             style={{ filter: 'drop-shadow(0 0 0.5rem black)' }}
@@ -71,6 +94,12 @@ export default function Home() {
                 </section>
                 <section className={styles.secSection}>
                     <div>
+                        <Image
+                            src={blackLine}
+                            alt='Black Line'
+                            width={80}
+                            height={80}
+                        />
                         <h2
                             className={styles.h2Text}
                             style={{
@@ -100,12 +129,21 @@ export default function Home() {
                                 ea commodo consequat.
                             </p>
                             <Link href='/amenities'>
-                                <input
-                                    type='button'
-                                    value='VIEW AMENITIES'
-                                    className={styles.amenitiesButton}
+                                <button
+                                    // type='button'
+                                    // value='VIEW AMENITIES'
+                                    className={styles.buttonStyle}
                                     /* Just navigate to contactus page for now */
-                                />
+                                >
+                                    <p>VIEW AMENITIES</p>{' '}
+                                    <Image
+                                        src={doubleArrowIcon}
+                                        width={15}
+                                        height={15}
+                                        alt='contact us button'
+                                        style={{ marginLeft: '4px' }}
+                                    />
+                                </button>
                             </Link>
                         </div>
                         <div className={styles.amenitiesCards}>
