@@ -52,6 +52,7 @@ export default function Home() {
                             initial={{ y: 50, opacity: 0 }}
                             whileInView={{ y: 0, opacity: 1 }}
                             transition={{ ease: 'easeInOut', duration: 1 }}
+                            viewport={{ once: true }}
                         >
                             <div className={styles.superTextContainer}>
                                 <p className={styles.superText}>
@@ -78,6 +79,7 @@ export default function Home() {
                             initial={{ y: 50, opacity: 0 }}
                             whileInView={{ y: 0, opacity: 1 }}
                             transition={{ ease: 'easeInOut', duration: 1 }}
+                            viewport={{ once: true }}
                         >
                             <h2
                                 className={styles.h2Text}
@@ -112,6 +114,7 @@ export default function Home() {
                         initial={{ y: 50, opacity: 0 }}
                         whileInView={{ y: 0, opacity: 1 }}
                         transition={{ ease: 'easeInOut', duration: 1 }}
+                        viewport={{ once: true }}
                     >
                         <div className={styles.introImages}>
                             <Image
@@ -135,6 +138,7 @@ export default function Home() {
                         initial={{ y: 50, opacity: 0 }}
                         whileInView={{ y: 0, opacity: 1 }}
                         transition={{ ease: 'easeInOut', duration: 1 }}
+                        viewport={{ once: true }}
                     >
                         <div>
                             <div>
@@ -162,6 +166,7 @@ export default function Home() {
                         initial={{ y: 50, opacity: 0 }}
                         whileInView={{ y: 0, opacity: 1 }}
                         transition={{ ease: 'easeInOut', duration: 1 }}
+                        viewport={{ once: true }}
                     >
                         <div className={styles.secContainer}>
                             <div className={styles.secInfo}>

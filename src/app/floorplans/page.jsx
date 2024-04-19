@@ -140,6 +140,7 @@ export default function Floorplans() {
                             initial={{ y: 70 }}
                             whileInView={{ y: 0 }}
                             transition={{ ease: 'easeInOut', duration: 0.5 }}
+                            viewport={{ once: true }}
                         >
                             <div key={unit.name} className={styles.unitCard}>
                                 <h2>{unit.name}</h2>
