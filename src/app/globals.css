@@ -7,6 +7,7 @@
 
     /* Color Palette of Website */
     --gold: #bf9a6fff;
+    --gold2: #c39f75;
     --darkgreen: #3e473fff;
     --lightgreen: #656a60ff;
     --khaki: #c2b5a7ff;
@@ -27,6 +28,8 @@ body {
     scroll-behavior: smooth;
     font-size: 16px;
     /* overflow-x: hidden; */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 }
 
 a {

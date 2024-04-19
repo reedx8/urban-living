@@ -5,6 +5,7 @@ import { usePathname, useSearchParams } from 'next/navigation';
 import Image from 'next/image';
 import avaLogo from '/public/avaLogo.png';
 import styles from '../styles/navbar.module.css';
+import AvaLogoSVG from '../components/avaLogo';
 
 export default function Navbar() {
     const [currentRoute, setCurrentRoute] = useState('/');
@@ -24,6 +25,7 @@ export default function Navbar() {
                         alt='AVA logo'
                         className={styles.avaLogo}
                     />
+                    {/* <AvaLogoSVG /> */}
                 </Link>
             </div>
             <div className={styles.links}>
