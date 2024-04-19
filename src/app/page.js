@@ -16,6 +16,7 @@ import whiteLine from '/public/icons/whiteLine.png';
 import lockIcon from '/public/icons/lock.png';
 import amenitiesIcon from '/public/icons/amenitiesIcon.png';
 import { motion } from 'framer-motion';
+import ScrollButton from './components/scrollButton';
 
 export default function Home() {
     return (
@@ -278,6 +279,7 @@ export default function Home() {
                 <section className={styles.thirdSection}></section>
                 {/* <section className={styles.fourthSection}></section> */}
             </div>
+            <ScrollButton />
         </main>
     );
 }
