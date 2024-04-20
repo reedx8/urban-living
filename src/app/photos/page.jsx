@@ -2,10 +2,11 @@
 import Carousel from '../components/carousel';
 import styles from './photos.module.css';
 import Image from 'next/image';
+import blackLine from '/public/icons/blackLine.png';
 
 export default function Photos() {
     return (
-        <main>
+        <main className={styles.main}>
             <section className={styles.headingSection}>
                 <video className={styles.headingPicture} autoPlay muted>
                     <source src='/banners/gallery.mp4' type='video/mp4' />
@@ -14,7 +15,17 @@ export default function Photos() {
             </section>
             <section className={styles.pageContent}>
                 <div className={styles.intro}>
-                    <h1>COMFORTABLE APARTMENTS IN TIGARD, OR</h1>
+                    <div>
+                        <Image
+                            src={blackLine}
+                            alt='black line'
+                            width={80}
+                            height={'auto'}
+                        />
+                        <h1 className={styles.h1Text}>
+                            COMFORTABLE APARTMENTS IN TIGARD, OR
+                        </h1>
+                    </div>
                     <p>
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit,
                         sed do eiusmod tempor incididunt ut labore et dolore

@@ -17,6 +17,7 @@ import lockIcon from '/public/icons/lock.png';
 import amenitiesIcon from '/public/icons/amenitiesIcon.png';
 import { motion } from 'framer-motion';
 import ScrollButton from './components/scrollButton';
+import MoreInfoButton from './components/moreInfoButton';
 
 export default function Home() {
     return (
@@ -61,6 +62,7 @@ export default function Home() {
                                         width={13}
                                         height={13}
                                         className={styles.superIcon}
+                                        alt='lock icon'
                                     />
                                     OUR PROMISE
                                 </p>
@@ -281,10 +283,35 @@ export default function Home() {
                         </div>
                     </motion.div>
                 </section>
-                <section className={styles.thirdSection}></section>
-                {/* <section className={styles.fourthSection}></section> */}
+                <section className={styles.thirdSection}>
+                    <div className={styles.thirdContainer}>
+                        <h2 style={{ textTransform: 'uppercase' }}>
+                            Explore Ava's floor plans Now!
+                        </h2>
+                        <p>
+                            View our available units today and contact our
+                            leasing office for your personal tour.
+                        </p>
+                        <Link href='/floorplans'>
+                            <button className={styles.buttonStyle2}>
+                                <p>VIEW FLOOR PLANS</p>
+                            </button>
+                        </Link>
+                    </div>
+                </section>
+                <section className={styles.fourthSection}>
+                    {/* <div className={styles.fourthContainer}>
+                        <h2>See Ava's floor plans Now!</h2>
+                        <Link href='/floorplans'>
+                            <button className={styles.buttonStyle2}>
+                                <p>VIEW FLOOR PLANS</p>
+                            </button>
+                        </Link>
+                    </div> */}
+                </section>
             </div>
             <ScrollButton />
+            <MoreInfoButton />
         </main>
     );
 }

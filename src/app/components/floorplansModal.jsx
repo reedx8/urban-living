@@ -43,8 +43,8 @@ export default function FloorplansModal({ isOpen, onClose, unit }) {
                                 <Image
                                     src={avaLogo}
                                     alt='ava logo'
-                                    width={33}
-                                    height={24}
+                                    width={37}
+                                    height={'auto'}
                                     className={styles.avaLogo}
                                 />
                             </div>

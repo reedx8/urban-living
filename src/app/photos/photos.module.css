@@ -1,3 +1,7 @@
+.main {
+    background-color: var(--altWhite);
+    /* padding: 3rem; */
+}
 .headingPicture {
     width: 100vw;
     object-fit: cover;
@@ -9,12 +13,22 @@
     /* flex-wrap: wrap; */
     /* justify-content: center; */
     gap: 2rem;
-    /* padding: 2rem; */
-    margin: 3rem;
+    padding: 2rem;
+    /* background-color: var(--altWhite); */
+    /* margin: 3rem; */
 }
 
-.intro > h1 {
+.h1Text {
     font-size: 2rem;
-    /* font-weight: 700; */
+    font-weight: 700;
     margin-bottom: 1rem;
+    background: linear-gradient(135deg, #d2b69f 0, #a47947 100%);
+    background: -webkit-linear-gradient(45deg, #d2b69f 0, #a47947 100%);
+    background: -moz-linear-gradient(45deg, #d2b69f 0, #a47947 100%);
+    -webkit-text-fill-color: transparent !important;
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: #c39f75;
+    /* filter: drop-shadow(0 0 0.5rem black); */
+    filter: drop-shadow(0 0 0.2rem var(--khaki));
 }

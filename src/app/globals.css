@@ -6,12 +6,12 @@
         'Fira Mono', 'Droid Sans Mono', 'Courier New', monospace;
 
     /* Color Palette of Website */
-    --gold: #bf9a6fff;
+    --gold: #bf9a6f;
     --gold2: #c39f75;
-    --darkgreen: #3e473fff;
-    --lightgreen: #656a60ff;
-    --khaki: #c2b5a7ff;
-    --white: #ffffffff;
+    --darkgreen: #3e473f;
+    --lightgreen: #656a60;
+    --khaki: #c2b5a7;
+    --white: #ffffff;
     --altWhite: #f1eee7;
     --ltgreyBg: #f8f9fa;
     --ltgreyBorder: #dee2e6;
