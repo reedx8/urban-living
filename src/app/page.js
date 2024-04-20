@@ -16,8 +16,6 @@ import whiteLine from '/public/icons/whiteLine.png';
 import lockIcon from '/public/icons/lock.png';
 import amenitiesIcon from '/public/icons/amenitiesIcon.png';
 import { motion } from 'framer-motion';
-// import ScrollButton from './components/scrollButton';
-// import MoreInfoButton from './components/moreInfoButton';
 
 export default function Home() {
     return (
