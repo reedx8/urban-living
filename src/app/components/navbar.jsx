@@ -1,7 +1,7 @@
 'use client';
 import Link from 'next/link';
 import { useState, useEffect } from 'react';
-import { usePathname, useSearchParams } from 'next/navigation';
+import { usePathname } from 'next/navigation';
 import Image from 'next/image';
 import avaLogo from '/public/avaLogo.png';
 import styles from '../styles/navbar.module.css';
@@ -11,10 +11,10 @@ export default function Navbar() {
     const [currentRoute, setCurrentRoute] = useState('/');
 
     const pathname = usePathname();
-    const searchParams = useSearchParams();
+    // const searchParams = useSearchParams();
     useEffect(() => {
         setCurrentRoute(pathname);
-    }, [pathname, searchParams]);
+    }, [pathname]);
 
     return (
         <nav className={styles.navbar}>
