@@ -13,6 +13,8 @@ export default function Photos() {
                     autoPlay
                     muted
                     controls={false}
+                    playsInline
+                    style={{ pointerEvents: 'none' }}
                     // onContextMenu={(e) => e.preventDefault()}
                 >
                     <source src='/banners/gallery.mp4' type='video/mp4' />
