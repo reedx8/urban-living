@@ -36,23 +36,15 @@
     .heroSection {
         background-image: url('/images/buildingRenderSmall.jpg');
         width: 100%;
-        /* background-size: contain; */
         background-repeat: no-repeat;
-        /* background-position: center; */
-        /* height: calc(100vh - 70px); */
-        /* height: 400px; */
-        /* height: auto; */
         padding: 3rem 0;
         background-position-x: 50%;
+        /* background-position-y: top; */
+
         /* background-position-y: 5px; */
-        /* background-position-y: 7%; */
         /* background-size: cover; */
         /* height: auto; */
         /* background-size: auto; */
-        /* display: flex; */
-        /* flex-direction: column; */
-        /* justify-content: center; */
-        /* align-items: center; */
     }
 }
 
@@ -73,7 +65,7 @@
 
 @media (max-width: 650px) {
     .pageContent > section {
-        padding: 1.5rem;
+        padding: 2rem;
     }
     .bigLogo {
         filter: drop-shadow(0 0 0.4rem #ffffff70);
@@ -210,14 +202,12 @@
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
+    background-position-x: 75%;
+    /* background-attachment: fixed; */
+
     /* background-position-y: 80%; */
     /* background-position-y: bottom; */
-    background-position-x: 75%;
 
-    /* gives heroBG a simple parallax effect */
-    background-attachment: fixed;
-
-    /* testing */
     margin: 0 !important;
     padding: 0 !important;
     display: flex;
