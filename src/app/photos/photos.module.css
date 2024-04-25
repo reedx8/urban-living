@@ -5,6 +5,7 @@
 .headingPicture {
     width: 100vw;
     object-fit: cover;
+    pointer-events: none;
 }
 
 .pageContent {

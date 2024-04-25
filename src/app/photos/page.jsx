@@ -8,7 +8,13 @@ export default function Photos() {
     return (
         <main className={styles.main}>
             <section className={styles.headingSection}>
-                <video className={styles.headingPicture} autoPlay muted>
+                <video
+                    className={styles.headingPicture}
+                    autoPlay
+                    muted
+                    controls={false}
+                    // onContextMenu={(e) => e.preventDefault()}
+                >
                     <source src='/banners/gallery.mp4' type='video/mp4' />
                     Your browser does not support the video tag.
                 </video>
