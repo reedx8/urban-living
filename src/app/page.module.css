@@ -36,7 +36,7 @@
     .heroSection {
         background-image: url('/images/buildingRender4.jpg');
         width: 100%;
-        background-position: center;
+        background-position: contain;
         /* background-position-y: 1%; */
         background-size: cover;
         background-repeat: no-repeat;
