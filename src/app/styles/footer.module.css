@@ -1,12 +1,12 @@
 .footerSection {
     background-color: var(--darkgreen);
     color: var(--white);
-    font-weight: 100;
+    font-weight: 400;
     padding: 2rem;
     font-size: 0.85rem;
-    width: 100vw;
+    width: 100%;
     overflow-x: hidden;
-    max-width: 100%;
+    /* max-width: 100%; */
 }
 /* set text opacity in footer to 0.8 */
 .footerSection p {
@@ -16,6 +16,15 @@
 .footerContent {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.footerLinks {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    align-items: flex-end;
 }
 
 .copyRight {
@@ -26,11 +35,14 @@
 .footerLeft {
     display: flex;
     gap: 1rem;
+    flex-wrap: wrap;
+    /* justify-content: space-between; */
+    justify-content: center;
 }
 .footerRight {
     display: flex;
     flex-direction: column;
-    /* gap: 1rem; */
+    gap: 1rem;
     justify-content: space-between;
 }
 
@@ -38,6 +50,7 @@
     display: flex;
     flex-direction: column;
     align-items: flex-end;
+    display: none;
 }
 
 .links {
@@ -68,6 +81,39 @@
 
 .bigLogo {
     filter: drop-shadow(0 0 0.4rem #00000070);
-    width: 350px;
-    height: 200px;
+}
+
+@media (min-width: 811px) {
+    .bigLogo {
+        width: 350px;
+        height: 200px;
+    }
+    .footerLinks {
+        align-items: flex-end;
+    }
+}
+@media (max-width: 810px) {
+    .footerContent {
+        flex-direction: column;
+        justify-content: center;
+        /* align-items: center; */
+    }
+    .footerLeft {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .bigLogo {
+        width: 250px;
+        height: 150px;
+    }
+    .footerLinks {
+        align-items: center;
+        /* align-items: flex-start; */
+    }
+    /* .officeHours {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    } */
 }

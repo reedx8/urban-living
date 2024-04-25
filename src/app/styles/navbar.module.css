@@ -6,7 +6,7 @@
     justify-content: space-between;
     align-items: center;
     padding: 0.5rem 2rem;
-    background-color: var(--white);
+    /* background-color: var(--white); */
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     width: 100%;
     overflow-x: hidden;
@@ -16,11 +16,6 @@
     /* max-width: 100%; */
     height: 70px; /* assures navbar is always 70px across all devices/browsers (hero pic on home page depends on this value) */
     /* overflow-y: hidden; */
-}
-
-.links {
-    display: flex;
-    gap: 1rem;
 }
 
 .avaLogo {
@@ -35,14 +30,6 @@
     transition: opacity 0.3s;
 }
 
-.link,
-.activeLink {
-    /* font-weight: 400; */
-    font-size: 0.85rem;
-    /* opacity: 0.8; */
-    letter-spacing: 0.9px;
-}
-
 .activeLink {
     /* color: var(--gold); */
     color: var(--khaki);
@@ -55,4 +42,81 @@
     color: var(--khaki);
     /* text-decoration: underline; */
     transition: color 0.3s;
+}
+
+.link,
+.activeLink {
+    /* font-weight: 400; */
+    font-size: 0.85rem;
+    /* opacity: 0.8; */
+    letter-spacing: 0.9px;
+}
+
+/* Mobile view */
+@media (max-width: 650px) {
+    .navbar {
+        box-shadow: none;
+    }
+
+    .links {
+        display: none;
+    }
+
+    .avaLogo {
+        /* display: none; */
+        /* width: 30px !important; */
+        /* height: auto; */
+    }
+
+    .mobileLink,
+    .mobileActiveLink {
+        font-size: 1rem;
+        letter-spacing: 0.9px;
+    }
+
+    .mobileActiveLink {
+        /* color: var(--gold); */
+        color: var(--khaki);
+        /* font-weight: bold; */
+    }
+    .mobileLink:hover {
+        color: var(--khaki);
+        transition: color 0.3s;
+    }
+
+    .mobileMenu {
+        position: fixed;
+        top: 70px;
+        /* right: 0; */
+        width: 100%;
+        background: rgba(255, 255, 255, 0.6);
+        backdrop-filter: blur(10px);
+        z-index: 1000;
+    }
+    .mobileLinks {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 2rem;
+        /* margin at top and bottom */
+        margin: 1rem 0;
+    }
+}
+
+/* Desktop/tablet view */
+@media (min-width: 651px) {
+    .links {
+        display: flex;
+        gap: 1rem;
+    }
+    .hamburger {
+        display: none;
+    }
+    .mobileMenu {
+        display: none;
+    }
+    .mobileLinks {
+        display: none;
+    }
 }

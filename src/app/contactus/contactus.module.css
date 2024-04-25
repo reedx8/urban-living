@@ -1,14 +1,21 @@
-.contactusPic {
-    width: 100vw;
-    height: auto;
-}
 .pageContent {
     display: flex;
     /* flex-direction: column; */
     justify-content: center;
     align-items: center;
-    gap: 50px;
+    gap: 2rem;
     /* background-color: var(--altWhite); */
+    flex-wrap: wrap;
+}
+
+.contactInfoContainer {
+    /* Margin for mobile view */
+    margin-bottom: 2rem;
+}
+
+.contactusPic {
+    width: 100vw;
+    height: auto;
 }
 .contactFormContainer {
     margin-top: 50px;

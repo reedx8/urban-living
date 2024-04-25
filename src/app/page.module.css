@@ -30,15 +30,32 @@
     align-items: center;
     */
 }
-.pageContent > section {
+
+/* .pageContent > section {
     padding: 4rem;
+} */
+
+@media (min-width: 651px) {
+    .pageContent > section {
+        padding: 4rem;
+    }
+    .bigLogo {
+        filter: drop-shadow(0 0 0.4rem #ffffff70);
+        width: 500px;
+        height: 300px;
+    }
 }
 
-.bigLogo {
-    /* apply shadow to the logo */
-    filter: drop-shadow(0 0 0.4rem #ffffff70);
-    width: 500px;
-    height: 300px;
+@media (max-width: 650px) {
+    .pageContent > section {
+        padding: 2rem;
+    }
+    .bigLogo {
+        filter: drop-shadow(0 0 0.4rem #ffffff70);
+        width: 325px;
+        height: 184px;
+        /* height: 150px; */
+    }
 }
 
 .introSection {
@@ -78,6 +95,8 @@
 .secContainer {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 15px;
     /* gap: 100px; */
 }
 .secInfo {
@@ -97,6 +116,7 @@
     flex-wrap: wrap;
     gap: 15px;
     width: 300px;
+    /* justify-content: center; */
 }
 
 .amenitiesCard,

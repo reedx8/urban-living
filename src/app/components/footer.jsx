@@ -21,27 +21,31 @@ export default function Footer() {
                 </div>
                 <div className={styles.footerRight}>
                     <div className={styles.footerLinks}>
-                        <Link href='/' className={styles.links}>
-                            HOME
-                        </Link>
-                        <Link href='/floorplans' className={styles.links}>
-                            FLOOR PLANS
-                        </Link>
-                        <Link href='/photos' className={styles.links}>
-                            PHOTOS
-                        </Link>
-                        <Link href='/amenities' className={styles.links}>
-                            AMENITIES
-                        </Link>
-                        <Link href='/contactus' className={styles.links}>
-                            CONTACT US
-                        </Link>
+                        <div>
+                            <Link href='/' className={styles.links}>
+                                HOME
+                            </Link>
+                            <Link href='/floorplans' className={styles.links}>
+                                FLOOR PLANS
+                            </Link>
+                            <Link href='/photos' className={styles.links}>
+                                PHOTOS
+                            </Link>
+                        </div>
+                        <div>
+                            <Link href='/amenities' className={styles.links}>
+                                AMENITIES
+                            </Link>
+                            <Link href='/contactus' className={styles.links}>
+                                CONTACT US
+                            </Link>
+                        </div>
                     </div>
-                    <div className={styles.officeHours}>
+                    {/* <div className={styles.officeHours}>
                         <p>OFFICE HOURS</p>
                         <p>Monday - Friday: 10:00 am - 6:00 pm</p>
                         <p>Saturday / Sunday: CLOSED</p>
-                    </div>
+                    </div> */}
                 </div>
             </div>
             <div className={styles.horizontalLine}></div>

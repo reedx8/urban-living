@@ -22,6 +22,7 @@ import { motion } from 'framer-motion';
 
 const units = [
     {
+        id: 0,
         name: 'Unit 1',
         // image: unit1,
         image: '/floorplans/unit1.jpg', // dynamic imports
@@ -31,6 +32,7 @@ const units = [
         sqft: '505',
     },
     {
+        id: 1,
         name: 'Unit 2',
         // image: unit2,
         image: '/floorplans/unit2.jpg',
@@ -40,6 +42,7 @@ const units = [
         sqft: '608',
     },
     {
+        id: 2,
         name: 'Unit 3',
         // image: unit3,
         image: '/floorplans/unit3.jpg',
@@ -49,6 +52,7 @@ const units = [
         sqft: '639',
     },
     {
+        id: 3,
         name: 'Unit 4',
         // image: unit4,
         image: '/floorplans/unit4.jpg',
@@ -58,6 +62,7 @@ const units = [
         sqft: '513',
     },
     {
+        id: 4,
         name: 'Unit 5',
         // image: unit5,
         image: '/floorplans/unit5.jpg',
@@ -67,6 +72,7 @@ const units = [
         sqft: '742',
     },
     {
+        id: 5,
         name: 'Unit 6',
         // image: unit6,
         image: '/floorplans/unit6.jpg',
@@ -76,6 +82,7 @@ const units = [
         sqft: '685',
     },
     {
+        id: 6,
         name: 'Unit 7',
         // image: unit7,
         image: '/floorplans/unit7.jpg',
@@ -85,6 +92,7 @@ const units = [
         sqft: '470',
     },
     {
+        id: 7,
         name: 'Unit 8',
         // image: unit8,
         image: '/floorplans/unit8.jpg',
@@ -94,6 +102,7 @@ const units = [
         sqft: '384',
     },
     {
+        id: 8,
         name: 'Unit 9',
         // image: unit9,
         image: '/floorplans/unit9.jpg',
@@ -137,6 +146,7 @@ export default function Floorplans() {
                 <div className={styles.floorplansContainer}>
                     {units.map((unit) => (
                         <motion.div
+                            key={unit.id}
                             initial={{ y: 70 }}
                             whileInView={{ y: 0 }}
                             transition={{ ease: 'easeInOut', duration: 0.5 }}
