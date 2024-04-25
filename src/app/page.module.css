@@ -36,18 +36,19 @@
     .heroSection {
         background-image: url('/images/buildingRender4.jpg');
         width: 100%;
-        background-position: contain;
-        /* background-position-y: 1%; */
-        background-size: cover;
+        background-size: contain;
         background-repeat: no-repeat;
+        background-position: center;
+        /* height: calc(100vh - 70px); */
+        height: 400px;
+        /* background-position-y: 1%; */
+        /* background-size: cover; */
         /* height: auto; */
         /* background-size: auto; */
-        /* background-position: center; */
         /* display: flex; */
         /* flex-direction: column; */
         /* justify-content: center; */
         /* align-items: center; */
-        height: calc(100vh - 70px);
     }
 }
 
