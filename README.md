@@ -1,6 +1,6 @@
-# Real Estate Website (Ava)
+# Urban Living at Fanno Creek
 
-Ava at Fanno Creek real estate landing page
+Real estate website for Urban Living at Fanno Creek
 
 ## To Run
 
