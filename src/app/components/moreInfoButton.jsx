@@ -7,6 +7,7 @@ import phoneIcon from '/public/icons/phone.png';
 import scheduleIcon from '/public/icons/schedule.png';
 import styles from '../styles/moreInfoButton.module.css';
 import { AnimatePresence, motion } from 'framer-motion';
+import Link from 'next/link';
 
 function ScheduleButton() {
     const handleScheduleClick = () => {
@@ -36,14 +37,19 @@ function EmailButton() {
             layoutId='emailButton'
             exit={{ y: 40, opacity: 0 }}
         >
-            <button className={styles.emailButton} onClick={handleEmailClick}>
-                <Image
-                    src={emailIcon}
-                    width={30}
-                    height={'auto'}
-                    alt='email us'
-                />
-            </button>
+            <Link href='/contactus'>
+                <button
+                    className={styles.emailButton}
+                    onClick={handleEmailClick}
+                >
+                    <Image
+                        src={emailIcon}
+                        width={30}
+                        height={'auto'}
+                        alt='email us'
+                    />
+                </button>
+            </Link>
         </motion.div>
     );
 }
@@ -59,15 +65,20 @@ function PhoneButton() {
             exit={{ y: 40, opacity: 0 }}
             layoutId='phoneButton'
         >
-            <button className={styles.phoneButton} onClick={handlePhoneClick}>
-                <Image
-                    src={phoneIcon}
-                    width={30}
-                    height={'auto'}
-                    alt='call us'
-                    className={styles.phoneIcon}
-                />
-            </button>
+            <Link href='/contactus'>
+                <button
+                    className={styles.phoneButton}
+                    onClick={handlePhoneClick}
+                >
+                    <Image
+                        src={phoneIcon}
+                        width={30}
+                        height={'auto'}
+                        alt='call us'
+                        className={styles.phoneIcon}
+                    />
+                </button>
+            </Link>
         </motion.div>
     );
 }

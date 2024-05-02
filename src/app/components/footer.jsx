@@ -1,6 +1,6 @@
 import Image from 'next/image';
 import styles from '../styles/footer.module.css';
-import bigLogo from '../assets/bigLogo.png';
+import bigLogo from '/public/fullLogoSmall.png';
 import Link from 'next/link';
 
 export default function Footer() {
@@ -11,8 +11,10 @@ export default function Footer() {
                 <div className={styles.footerLeft}>
                     <Image
                         src={bigLogo}
-                        alt='Ava at Fanno Creek Logo'
+                        alt='Urban Living at Fanno Creek Logo'
                         className={styles.bigLogo}
+                        width={500}
+                        height={184}
                     />
                     <div className={styles.address}>
                         <p>12547 SW Main St</p>
@@ -51,7 +53,7 @@ export default function Footer() {
             <div className={styles.horizontalLine}></div>
             <div className={styles.copyRight}>
                 <p>
-                    © 2024 Ava At Fanno Creek
+                    © 2024 Urban Living at Fanno Creek
                     <span>
                         {' '}
                         | <Link href='/privacypolicy'>Privacy Policy</Link>

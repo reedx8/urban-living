@@ -1,10 +1,9 @@
 'use client';
 import Image from 'next/image';
 import styles from './page.module.css';
-import bigLogo from '/public/bigLogo.png';
+import fullLogo from '/public/fullLogo.png';
 import kitchenPic from '/public/images/kitchen.jpg';
-import pubPic from '/public/images/pub.jpg';
-import pubPic2 from '/public/images/pub2.jpg';
+import buildingPic from '/public/images/building.jpg';
 import Link from 'next/link';
 import unitsIcon from '/public/icons/units3.png';
 import busIcon from '/public/icons/bus.png';
@@ -14,7 +13,6 @@ import doubleArrowIcon from '/public/icons/doubleArrow.png';
 import blackLine from '/public/icons/blackLine.png';
 import whiteLine from '/public/icons/whiteLine.png';
 import lockIcon from '/public/icons/lock.png';
-import amenitiesIcon from '/public/icons/amenitiesIcon.png';
 import { motion } from 'framer-motion';
 
 export default function Home() {
@@ -22,7 +20,7 @@ export default function Home() {
         <main className={styles.main}>
             <section className={styles.heroSection}>
                 <Image
-                    src={bigLogo}
+                    src={fullLogo}
                     alt='Big Logo'
                     className={styles.bigLogo}
                 />
@@ -92,20 +90,21 @@ export default function Home() {
                             {/* <h2 className={styles.h2Text}>Better</h2> */}
                             <br />
                             <p className={styles.introText}>
-                                Ava at Fanno Creek is a residence offering
-                                convenience and affordability to the Tigard
-                                area. 
+                                Urban Living at Fanno Creek is a residence
+                                offering convenience and affordability to the
+                                Tigard area. 
                             </p>
                             <br />
                             <p className={styles.introText}>
-                                This residence is a 6 floor building with 22
+                                This residence is a 3 story building with 22
                                 apartments total. It is situated right in the
                                 center of Tigard’s main street, just a short
                                 walk from pubs, coffee shops, and public
                                 transportation. Every apartment has been
                                 upgraded with modern appliances and simple,
                                 clean interior. Welcome home, and experience
-                                better living, here at Ava at Fanno Creek!
+                                better living, here at Urban Living at Fanno
+                                Creek!
                             </p>
                         </motion.div>
                     </div>
@@ -118,14 +117,14 @@ export default function Home() {
                     >
                         <div className={styles.introImages}>
                             <Image
-                                src={kitchenPic}
-                                alt='Kitchen picture'
+                                src={buildingPic}
+                                alt='Building picture'
                                 width={400}
                                 height={'auto'}
                             />
                             <Image
-                                src={pubPic}
-                                alt='Pub picture'
+                                src={kitchenPic}
+                                alt='Kitchen picture'
                                 width={400}
                                 height={'auto'}
                             />
@@ -284,7 +283,7 @@ export default function Home() {
                 <section className={styles.thirdSection}>
                     <div className={styles.thirdContainer}>
                         <h2 style={{ textTransform: 'uppercase' }}>
-                            Explore Ava's floor plans Now!
+                            Explore our floor plans Now!
                         </h2>
                         <p>
                             View our available units today and contact our

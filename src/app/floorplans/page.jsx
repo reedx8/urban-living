@@ -1,7 +1,6 @@
 'use client';
 import { useState, useEffect } from 'react';
 import Image from 'next/image';
-// import floorplans from '../assets/floorplans.png';
 import floorplansBanner from '/public/banners/floorplans.png';
 import styles from './floorplans.module.css';
 // import unit1 from '../assets/floorplans/unit1.jpg';
@@ -13,9 +12,9 @@ import styles from './floorplans.module.css';
 // import unit7 from '../assets/floorplans/unit7.jpg';
 // import unit8 from '../assets/floorplans/unit8.jpg';
 // import unit9 from '../assets/floorplans/unit9.jpg';
-import bath from '../assets/icons/bath.png';
-import bed from '../assets/icons/bed.png';
-import sqft from '../assets/icons/dim.png';
+import bathIcon from '/public/icons/bath.png';
+import bedIcon from '/public/icons/bed.png';
+import sqftIcon from '/public/icons/dim.png';
 import Link from 'next/link';
 import FloorplansModal from '../components/floorplansModal';
 import { motion } from 'framer-motion';
@@ -179,7 +178,7 @@ export default function Floorplans() {
                                     <div className={styles.cardRow}>
                                         <p>
                                             <Image
-                                                src={bed}
+                                                src={bedIcon}
                                                 alt='bed icon'
                                                 className={styles.icons}
                                             />
@@ -187,7 +186,7 @@ export default function Floorplans() {
                                         </p>
                                         <p>
                                             <Image
-                                                src={bath}
+                                                src={bathIcon}
                                                 alt='bath icon'
                                                 className={styles.icons}
                                             />
@@ -196,7 +195,7 @@ export default function Floorplans() {
                                     </div>
                                     <p>
                                         <Image
-                                            src={sqft}
+                                            src={sqftIcon}
                                             alt='sqft icon'
                                             className={styles.icons}
                                         />

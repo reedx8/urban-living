@@ -13,12 +13,13 @@
     justify-content: center;
     align-items: center;
     background-attachment: fixed;
+    background-image: url('/images/buildingRenderSmall.jpg');
 }
 
 @media (min-width: 651px) {
     .heroSection {
         /* want background to fill the width of viewport by stretching */
-        background-image: url('/heroBG.jpg');
+        /* background-image: url('/heroBG.jpg'); */
         background-size: cover;
         background-repeat: no-repeat;
         background-position: center;
@@ -34,7 +35,7 @@
 
 @media (max-width: 650px) {
     .heroSection {
-        background-image: url('/images/buildingRenderSmall.jpg');
+        /* background-image: url('/images/buildingRenderSmall.jpg'); */
         width: 100%;
         background-repeat: no-repeat;
         padding: 3rem 0;
@@ -58,8 +59,8 @@
     }
     .bigLogo {
         filter: drop-shadow(0 0 0.4rem #ffffff70);
-        width: 500px;
-        height: 300px;
+        width: 700px;
+        height: auto;
     }
 }
 
@@ -333,6 +334,7 @@
     box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
     display: flex;
     justify-content: center;
+    align-items: center;
 }
 
 .buttonStyle:hover {

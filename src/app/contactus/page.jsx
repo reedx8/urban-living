@@ -1,11 +1,8 @@
 import ContactUsForm from '../components/form';
 import Image from 'next/image';
-import phone from '../assets/icons/phone.png';
-import phone2 from '../assets/icons/phone2.png';
-import location from '../assets/icons/location.png';
-import location2 from '../assets/icons/location2.png';
-import time from '../assets/icons/time.png';
-import time2 from '../assets/icons/time2.png';
+import phoneIcon from '/public/icons/phone2.png';
+import locationIcon from '/public/icons/location.png';
+import timeIcon from '/public/icons/time.png';
 import contactusBanner from '/public/banners/contactus.png';
 import styles from './contactus.module.css';
 
@@ -30,7 +27,7 @@ export default function Contactus() {
                     <div className={styles.phoneInfo}>
                         <p>
                             <Image
-                                src={phone2}
+                                src={phoneIcon}
                                 alt='Phone icon'
                                 className={styles.icons}
                             />
@@ -40,7 +37,7 @@ export default function Contactus() {
                     <div className={styles.horizontalLine}></div>
                     <div className={styles.locationInfo}>
                         <Image
-                            src={location2}
+                            src={locationIcon}
                             alt='Location icon'
                             className={styles.icons}
                         />
@@ -63,7 +60,7 @@ export default function Contactus() {
                     <div className={styles.horizontalLine}></div>
                     <div className={styles.timeInfo}>
                         <Image
-                            src={time2}
+                            src={timeIcon}
                             alt='Time icon'
                             className={styles.icons}
                         />

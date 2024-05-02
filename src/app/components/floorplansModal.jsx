@@ -1,15 +1,15 @@
 'use client';
 import styles from '../styles/floorplansModal.module.css';
 import Image from 'next/image';
-import closeIcon from '../assets/icons/close.png';
-import bathIcon from '../assets/icons/bath.png';
-import bedIcon from '../assets/icons/bed.png';
-import sqftIcon from '../assets/icons/dim.png';
-import starIcon from '../assets/icons/star.png';
-import pointIcon from '../assets/icons/point.png';
-import verticalLine from '../assets/icons/verticalLine.png';
+import closeIcon from '/public/icons/close.png';
+import bathIcon from '/public/icons/bath.png';
+import bedIcon from '/public/icons/bed.png';
+import sqftIcon from '/public/icons/dim.png';
+import starIcon from '/public/icons/star.png';
+import pointIcon from '/public/icons/point.png';
+import verticalLine from '/public/icons/verticalLine.png';
 import Link from 'next/link';
-import avaLogo from '../assets/ava.png';
+import logoOnly from '/public/logoOnly.png';
 import { motion } from 'framer-motion';
 
 export default function FloorplansModal({ isOpen, onClose, unit }) {
@@ -41,11 +41,11 @@ export default function FloorplansModal({ isOpen, onClose, unit }) {
                             <div className={styles.unitHeader}>
                                 <h1>{unit.name}</h1>
                                 <Image
-                                    src={avaLogo}
-                                    alt='ava logo'
-                                    width={37}
+                                    src={logoOnly}
+                                    alt='urban living logo'
+                                    width={30}
                                     height={'auto'}
-                                    className={styles.avaLogo}
+                                    className={styles.urbanLogo}
                                 />
                             </div>
                             <div className={styles.modalRow}>

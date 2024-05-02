@@ -1,6 +1,6 @@
 # Urban Living at Fanno Creek
 
-Real estate website for Urban Living at Fanno Creek
+Real estate landing page for Urban Living at Fanno Creek
 
 ## To Run
 

@@ -3,11 +3,10 @@ import Link from 'next/link';
 import { useState, useEffect } from 'react';
 import { usePathname } from 'next/navigation';
 import Image from 'next/image';
-import avaLogo from '/public/avaLogo.png';
 import hamburger from '/public/icons/hamburger.png';
 import styles from '../styles/navbar.module.css';
-import AvaLogoSVG from '../components/avaLogo';
 import { motion } from 'framer-motion';
+import logoOnly from '/public/logoOnly.png';
 
 export default function Navbar() {
     const [currentRoute, setCurrentRoute] = useState('/');
@@ -32,11 +31,11 @@ export default function Navbar() {
                 <div className={styles.logo}>
                     <Link href='/'>
                         <Image
-                            src={avaLogo}
-                            alt='AVA logo'
+                            src={logoOnly}
+                            alt='Urban Living at Fanno Creek logo'
                             className={styles.avaLogo}
-                            width={40}
-                            height={'auto'}
+                            // width={40}
+                            // height={'auto'}
                         />
                     </Link>
                 </div>
@@ -98,6 +97,7 @@ export default function Navbar() {
                         alt='hamburger menu'
                         width={30}
                         height={'auto'}
+                        className={styles.hamburgerIcon}
                     />
                 </div>
             </nav>
