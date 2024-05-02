@@ -23,6 +23,8 @@ export default function Home() {
                     src={fullLogo}
                     alt='Big Logo'
                     className={styles.bigLogo}
+                    priority={true}
+                    quality={100}
                 />
                 <Link href='/contactus'>
                     <button

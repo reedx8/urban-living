@@ -3,8 +3,9 @@
     /* padding: 3rem; */
 }
 .headingPicture {
-    width: 100vw;
-    object-fit: cover;
+    width: 100%;
+    height: auto;
+    /* object-fit: cover; */
 }
 
 .pageContent {

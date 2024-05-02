@@ -2,13 +2,20 @@
 import Carousel from '../components/carousel';
 import styles from './photos.module.css';
 import Image from 'next/image';
+import photoBanner from '/public/banners/photogallery.png';
 import blackLine from '/public/icons/blackLine.png';
 
 export default function Photos() {
     return (
         <main className={styles.main}>
             <section className={styles.headingSection}>
-                <video
+                <Image
+                    src={photoBanner}
+                    priority={true}
+                    alt='photo banner'
+                    className={styles.headingPicture}
+                />
+                {/* <video
                     className={styles.headingPicture}
                     autoPlay
                     muted
@@ -19,7 +26,7 @@ export default function Photos() {
                 >
                     <source src='/banners/gallery.mp4' type='video/mp4' />
                     Your browser does not support the video tag.
-                </video>
+                </video> */}
             </section>
             <section className={styles.pageContent}>
                 <div className={styles.intro}>

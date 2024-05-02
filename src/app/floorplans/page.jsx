@@ -134,6 +134,7 @@ export default function Floorplans() {
             <section>
                 <Image
                     src={floorplansBanner}
+                    priority={true}
                     alt='Floor Plans header picture'
                     className={styles.floorplansPic}
                 />

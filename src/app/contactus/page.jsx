@@ -12,6 +12,7 @@ export default function Contactus() {
             <section>
                 <Image
                     src={contactusBanner}
+                    priority={true}
                     alt='Contact us banner picture'
                     className={styles.contactusPic}
                 />

@@ -8,6 +8,7 @@ export default function Amenities() {
             <section>
                 <Image
                     src={amenitiesBanner}
+                    priority={true}
                     alt='Amenities banner picture'
                     className={styles.amenitiesPic}
                 />
