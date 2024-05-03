@@ -17,10 +17,38 @@
     align-items: center;
 }
 
-/* includes modal and close button */
 .modalContainer {
     display: flex;
-    /* pointer-events: none; */
+    /* make contents scrollable when modal is too long */
+}
+
+/* tablet and mobile - modal layed out vertically instead */
+@media (max-width: 850px) {
+    /* includes modal and close button */
+    .modalContainer {
+        flex-direction: column;
+        /* pointer-events: none; */
+    }
+    .closeModal {
+        order: -1;
+        align-self: flex-end;
+        margin-bottom: 0.5rem;
+    }
+    .modal {
+        flex-direction: column;
+    }
+    .unitPic {
+        width: 325px;
+        height: auto;
+    }
+}
+
+/* very small screen (iphone se) */
+@media (max-height: 750px) and (max-width: 850px) {
+    .unitPic {
+        width: 260px;
+        height: auto;
+    }
 }
 
 .modal {
@@ -35,11 +63,13 @@
 .modalRow {
     display: flex;
     align-items: center;
+    justify-content: center;
     /* background-color: var(--ltgreyBg); */
 }
 .modalRow2 {
     display: flex;
     justify-content: center;
+    align-items: center;
     /* background-color: var(--ltgreyBg); */
 }
 
@@ -50,14 +80,16 @@
     justify-content: space-between;
 }
 
-.unitInfo > h1 {
-    color: var(--khaki);
-    margin-bottom: 1.5rem;
+.unitHeader > h1 {
+    /* color: var(--khaki); */
+    /* margin-bottom: 1.5rem; */
     letter-spacing: 1px;
+    font-size: 1.9rem;
 }
 
 .unitInfo > h2 {
-    margin-top: 1.5rem;
+    font-size: 1.3rem;
+    margin: 0.3rem 0;
     /* letter-spacing: 1px; */
 }
 
@@ -98,7 +130,7 @@
     background-color: white;
     border: none;
     border-radius: 5px;
-    margin-left: 10px;
+    margin-left: 8px;
     width: 30px;
     height: 30px;
 }
@@ -123,6 +155,7 @@
     cursor: pointer;
     width: 100%;
     font-size: 0.85rem;
+    margin-top: 0.3rem;
 }
 
 .contactusButton:hover {

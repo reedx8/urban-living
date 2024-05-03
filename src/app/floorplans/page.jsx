@@ -164,6 +164,7 @@ export default function Floorplans() {
                                     }}
                                     width={250}
                                     height={250}
+                                    priority={true}
                                 />
                                 <div className={styles.unitInfo}>
                                     {/* <h2>{unit.name}</h2> */}
