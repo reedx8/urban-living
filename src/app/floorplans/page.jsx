@@ -22,9 +22,9 @@ import { motion } from 'framer-motion';
 const units = [
     {
         id: 0,
-        name: 'Unit 1',
+        name: 'Space A',
         // image: unit1,
-        image: '/floorplans/unit1.jpg', // dynamic imports
+        image: '/floorplans/spacea.jpg', // dynamic imports
         price: '$',
         bed: '1 Bed',
         bath: '1',
@@ -32,9 +32,9 @@ const units = [
     },
     {
         id: 1,
-        name: 'Unit 2',
+        name: 'Space B',
         // image: unit2,
-        image: '/floorplans/unit2.jpg',
+        image: '/floorplans/spaceb.jpg',
         price: '$',
         bed: '1 Bed',
         bath: '1',
@@ -42,9 +42,9 @@ const units = [
     },
     {
         id: 2,
-        name: 'Unit 3',
+        name: 'Space C',
         // image: unit3,
-        image: '/floorplans/unit3.jpg',
+        image: '/floorplans/spacec.jpg',
         price: '$',
         bed: '1 Bed',
         bath: '1',
@@ -52,9 +52,9 @@ const units = [
     },
     {
         id: 3,
-        name: 'Unit 4',
+        name: 'Space D',
         // image: unit4,
-        image: '/floorplans/unit4.jpg',
+        image: '/floorplans/spaced.jpg',
         price: '$',
         bed: '1 Bed',
         bath: '1',
@@ -62,9 +62,9 @@ const units = [
     },
     {
         id: 4,
-        name: 'Unit 5',
+        name: 'Space E',
         // image: unit5,
-        image: '/floorplans/unit5.jpg',
+        image: '/floorplans/spacee.jpg',
         price: '$',
         bed: '1 Bed',
         bath: '1',
@@ -72,9 +72,9 @@ const units = [
     },
     {
         id: 5,
-        name: 'Unit 6',
+        name: 'Space F',
         // image: unit6,
-        image: '/floorplans/unit6.jpg',
+        image: '/floorplans/spacef.jpg',
         price: '$',
         bed: '1 Bed',
         bath: '1',
@@ -82,9 +82,9 @@ const units = [
     },
     {
         id: 6,
-        name: 'Unit 7',
+        name: 'Space G',
         // image: unit7,
-        image: '/floorplans/unit7.jpg',
+        image: '/floorplans/spaceg.jpg',
         price: '$',
         bed: '1 Bed',
         bath: '1',
@@ -92,9 +92,9 @@ const units = [
     },
     {
         id: 7,
-        name: 'Unit 8',
+        name: 'Space H',
         // image: unit8,
-        image: '/floorplans/unit8.jpg',
+        image: '/floorplans/spaceh.jpg',
         price: '$',
         bed: 'Studio',
         bath: '1',
@@ -102,9 +102,9 @@ const units = [
     },
     {
         id: 8,
-        name: 'Unit 9',
+        name: 'Space I',
         // image: unit9,
-        image: '/floorplans/unit9.jpg',
+        image: '/floorplans/spacei.jpg',
         price: '$',
         bed: '1 Bed',
         bath: '1',
