@@ -10,14 +10,14 @@ import { AnimatePresence, motion } from 'framer-motion';
 import Link from 'next/link';
 
 function ScheduleButton() {
-    const handleScheduleClick = () => {
-        console.log('Schedule button clicked');
-    };
+    // const handleScheduleClick = () => {
+    //     console.log('Schedule button clicked');
+    // };
     return (
-        <button className={styles.scheduleButton} onClick={handleScheduleClick}>
+        <button className={styles.scheduleButton}>
             <Image
                 src={scheduleIcon}
-                width={30}
+                width={20}
                 height={'auto'}
                 alt='schedule a tour'
             />
@@ -25,9 +25,9 @@ function ScheduleButton() {
     );
 }
 function EmailButton() {
-    const handleEmailClick = () => {
-        console.log('Email button clicked');
-    };
+    // const handleEmailClick = () => {
+    //     console.log('Email button clicked');
+    // };
 
     return (
         <motion.div
@@ -40,11 +40,11 @@ function EmailButton() {
             <Link href='/contactus'>
                 <button
                     className={styles.emailButton}
-                    onClick={handleEmailClick}
+                    // onClick={handleEmailClick}
                 >
                     <Image
                         src={emailIcon}
-                        width={30}
+                        width={20}
                         height={'auto'}
                         alt='email us'
                     />
@@ -54,9 +54,9 @@ function EmailButton() {
     );
 }
 function PhoneButton() {
-    const handlePhoneClick = () => {
-        console.log('Phone button clicked');
-    };
+    // const handlePhoneClick = () => {
+    //     console.log('Phone button clicked');
+    // };
     return (
         <motion.div
             initial={{ y: 40, opacity: 0 }}
@@ -68,11 +68,11 @@ function PhoneButton() {
             <Link href='/contactus'>
                 <button
                     className={styles.phoneButton}
-                    onClick={handlePhoneClick}
+                    // onClick={handlePhoneClick}
                 >
                     <Image
                         src={phoneIcon}
-                        width={30}
+                        width={20}
                         height={'auto'}
                         alt='call us'
                         className={styles.phoneIcon}
@@ -88,11 +88,11 @@ export default function MoreInfoButton() {
     const [viewPhoneButton, setViewPhoneButton] = useState(false);
     const [viewScheduleButton, setViewScheduleButton] = useState(false);
 
-    function handleMouseEnter(e) {
-        if (e.target.value === 'more info') {
-            console.log('Mouse entered more info button');
-        }
-    }
+    // function handleMouseEnter(e) {
+    //     if (e.target.value === 'more info') {
+    //         console.log('Mouse entered more info button');
+    //     }
+    // }
 
     function handleMoreInfoClick() {
         setViewEmailButton(!viewEmailButton);
@@ -114,12 +114,12 @@ export default function MoreInfoButton() {
             <button
                 className={styles.moreInfoButton}
                 onClick={handleMoreInfoClick}
-                onMouseEnter={handleMouseEnter}
+                // onMouseEnter={handleMouseEnter}
                 value='more info'
             >
                 <Image
                     src={ellipsisIcon}
-                    width={30}
+                    width={20}
                     height={'auto'}
                     alt='more info'
                     className={styles.ellipsisIcon}
