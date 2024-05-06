@@ -34,6 +34,7 @@ export default function Navbar() {
                             src={logoOnly}
                             alt='Urban Living at Fanno Creek logo'
                             className={styles.avaLogo}
+                            priority={true}
                             // width={40}
                             // height={'auto'}
                         />
