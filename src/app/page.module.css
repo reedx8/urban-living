@@ -39,14 +39,15 @@
         /* background-image: url('/images/buildingRenderSmall.jpg'); */
         width: 100%;
         background-repeat: no-repeat;
-        padding: 3rem 0;
-        background-position-x: 40%;
-        background-position-y: 3%;
-        background-image: url('/images/renderMobile.jpg');
+        padding: 5rem 0;
+        /* background-position-x: 40%; */
+        background-position-y: 10%;
+        /* background-size: contain; */
+        background-image: url('/images/renderMobile.JPG');
         /* background-position-y: top; */
 
         /* background-position-y: 5px; */
-        /* background-size: cover; */
+        background-size: cover;
         /* height: auto; */
         /* background-size: auto; */
     }
