@@ -24,7 +24,7 @@ const units = [
         id: 0,
         name: 'Space A',
         // image: unit1,
-        image: '/floorplans/spacea.jpg', // dynamic imports
+        images: '/floorplans/spacea.jpg', // dynamic imports
         price: '$',
         bed: '1 Bed',
         bath: '1',
@@ -33,8 +33,8 @@ const units = [
     {
         id: 1,
         name: 'Space B',
-        // image: unit2,
-        image: '/floorplans/spaceb.jpg',
+        // images: unit2,
+        images: '/floorplans/spaceb.jpg',
         price: '$',
         bed: '1 Bed',
         bath: '1',
@@ -43,8 +43,8 @@ const units = [
     {
         id: 2,
         name: 'Space C',
-        // image: unit3,
-        image: '/floorplans/spacec.jpg',
+        // images: unit3,
+        images: '/floorplans/spacec.jpg',
         price: '$',
         bed: '1 Bed',
         bath: '1',
@@ -53,8 +53,8 @@ const units = [
     {
         id: 3,
         name: 'Space D',
-        // image: unit4,
-        image: '/floorplans/spaced.jpg',
+        // images: unit4,
+        images: '/floorplans/spaced.jpg',
         price: '$',
         bed: '1 Bed',
         bath: '1',
@@ -63,8 +63,8 @@ const units = [
     {
         id: 4,
         name: 'Space E',
-        // image: unit5,
-        image: '/floorplans/spacee.jpg',
+        // images: unit5,
+        images: '/floorplans/spacee.jpg',
         price: '$',
         bed: '1 Bed',
         bath: '1',
@@ -73,8 +73,8 @@ const units = [
     {
         id: 5,
         name: 'Space F',
-        // image: unit6,
-        image: '/floorplans/spacef.jpg',
+        // images: unit6,
+        images: '/floorplans/spacef.jpg',
         price: '$',
         bed: '1 Bed',
         bath: '1',
@@ -83,8 +83,8 @@ const units = [
     {
         id: 6,
         name: 'Space G',
-        // image: unit7,
-        image: '/floorplans/spaceg.jpg',
+        // images: unit7,
+        images: '/floorplans/spaceg.jpg',
         price: '$',
         bed: '1 Bed',
         bath: '1',
@@ -93,8 +93,8 @@ const units = [
     {
         id: 7,
         name: 'Space H',
-        // image: unit8,
-        image: '/floorplans/spaceh.jpg',
+        // images: unit8,
+        images: '/floorplans/spaceh.jpg',
         price: '$',
         bed: 'Studio',
         bath: '1',
@@ -103,8 +103,8 @@ const units = [
     {
         id: 8,
         name: 'Space I',
-        // image: unit9,
-        image: '/floorplans/spacei.jpg',
+        // images: unit9,
+        images: '/floorplans/spacei.jpg',
         price: '$',
         bed: '1 Bed',
         bath: '1',
@@ -155,7 +155,7 @@ export default function Floorplans() {
                             <div key={unit.name} className={styles.unitCard}>
                                 <h2>{unit.name}</h2>
                                 <Image
-                                    src={unit.image}
+                                    src={unit.images}
                                     alt={unit.name}
                                     className={styles.unitPic}
                                     onClick={() => {

@@ -172,20 +172,21 @@ export default function Home() {
                         <div className={styles.secContainer}>
                             <div className={styles.secInfo}>
                                 <p>
-                                    Lorem ipsum dolor sit amet, consectetur
-                                    adipiscing elit, sed do eiusmod tempor
-                                    incididunt ut labore et dolore magna aliqua.
-                                    Ut enim ad minim veniam, quis nostrud
-                                    exercitation ullamco laboris nisi ut aliquip
-                                    ex ea commodo consequat. Duis aute irure
-                                    dolor in reprehenderit in voluptate velit
-                                    esse cillum dolore eu fugiat nulla pariatur.
+                                    We offer a peaceful retreat with an array of
+                                    convenient amenities that cater to a vibrant
+                                    and connected lifestyle. The community
+                                    features controlled access, 24-hour on-site
+                                    maintenance, and vibrant communal spaces
+                                    like a lively plaza and plentiful
+                                    ground-floor retail options.
                                 </p>
                                 <p>
                                     {' '}
-                                    Ut enim ad minim veniam, quis nostrud
-                                    exercitation ullamco laboris nisi ut aliquip
-                                    ex ea commodo consequat.
+                                    Only minutes away from grocery stores and 15
+                                    minutes from downtown Portland, Urban Living
+                                    at Fanno Creek blends the best of peaceful
+                                    urban living with the convenience of modern
+                                    amenities.
                                 </p>
                                 <Link href='/amenities'>
                                     <button

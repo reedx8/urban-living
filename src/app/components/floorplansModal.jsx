@@ -14,8 +14,8 @@ import { motion } from 'framer-motion';
 
 export default function FloorplansModal({ isOpen, onClose, unit }) {
     if (!isOpen) return null;
-    const unitsWithoutBalconiesAndClosets = ['Unit 8'];
-    const unitsWithDens = ['Unit 5', 'Unit 9'];
+    const unitsWithoutBalconiesAndClosets = ['Space H'];
+    const unitsWithDens = ['Space E', 'Space I'];
 
     return (
         <div className={styles.modalBg}>
@@ -31,7 +31,7 @@ export default function FloorplansModal({ isOpen, onClose, unit }) {
                 >
                     <div className={styles.modal}>
                         <Image
-                            src={unit.image}
+                            src={unit.images}
                             alt={unit.name}
                             className={styles.unitPic}
                             width={500}

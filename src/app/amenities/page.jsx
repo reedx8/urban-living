@@ -6,6 +6,7 @@ import separator from '/public/images/separator.png';
 import paw from '/public/icons/paw.png';
 import group from '/public/icons/group.png';
 import aptmt from '/public/icons/aptmt.png';
+import blackLine from '/public/icons/blackLine.png';
 
 export default function Amenities() {
     const commAmen1 = [
@@ -58,6 +59,12 @@ export default function Amenities() {
                         Our community offers a variety of amenities to make your
                         stay with us as comfortable as possible.
                     </p>
+                    <Image
+                        src={blackLine}
+                        alt='black line'
+                        width={80}
+                        height={'auto'}
+                    />
                     <br />
                     <p>The amenities include:</p>
                     {/* <br /> */}
@@ -203,6 +210,12 @@ export default function Amenities() {
                     </p>
                 </div>
                 <div className={styles.contentContainer}>
+                    <Image
+                        src={blackLine}
+                        alt='black line'
+                        width={80}
+                        height={'auto'}
+                    />
                     <p>
                         For more information on the amenities we offer, please
                         contact us.
