@@ -15,31 +15,41 @@ export default function Amenities() {
         'Ground floor retail',
         'Elevator',
         'Package receiving office',
+        'Close to Ash Avenue Dog Park',
+        'Jogging trail nearby',
+        'Walking distance to public transportation',
     ];
     const commAmen2 = [
         'Availability 24 hours',
         'Wi-Fi access',
         'Bike racks',
         'Community plaza',
+        'Pet friendly',
+        'Off street parking for rent',
+        'Smoke free',
+        'Detached garage available',
     ];
 
     const aptAmen1 = [
-        'Cable ready',
-        'Dishwasher',
-        'Quartz countertops and islands with seating room (select units)',
-        'Hardwood Flooring',
+        'High speed internet access',
+        'Refrigerator & dishwasher',
+        'Quartz countertops & islands with seating room (select units)',
+        'Wood-style plank flooring',
         'Lighting over kitchen islands (select units)',
-        'High ceilings',
+        'High ceilings (10 ft.)',
         'Pantry space',
+        'Self-cleaning oven',
+        'Cable ready',
     ];
 
     const aptAmen2 = [
+        'Microwave',
         'Keyless entry',
-        'Efficient appliances',
+        'Energy-efficent stainless appliances',
         'Air conditioning',
-        'Balcony space (select units)',
+        'Private balcony (select units)',
         'Under cabinet kitchen lighting',
-        'Full size, front load in-home washer & dryer',
+        'Full size, front load washer & dryer',
         'Spacious walk-in closets (select units)',
     ];
 
@@ -192,7 +202,7 @@ export default function Amenities() {
                             width={30}
                             height={30}
                         />
-                        <p>Less than 35 lb dogs and cats only </p>
+                        <p>Less than 35 lb dogs and cats only</p>
                     </div>
                     <div className={styles.listItem}>
                         <Image
@@ -202,11 +212,23 @@ export default function Amenities() {
                             width={30}
                             height={30}
                         />
-                        <p>Max 2 allowed per apartment unit</p>
+                        <p>$35/month pet rent</p>
                     </div>
+                    <div className={styles.listItem}>
+                        <Image
+                            src={doubleArrow}
+                            alt='Double arrow icon'
+                            className={styles.doubleArrow}
+                            width={30}
+                            height={30}
+                        />
+                        <p>$300 pet deposit/pet</p>
+                    </div>
+                    <br />
                     <p>
-                        We do not have breed restrictions. Please contact the
-                        office for more information on our pet policy.
+                        Max 2 pets allowed per unit. Must be older than 1 year
+                        old. We do not have breed restrictions. Please contact
+                        the office for more information on our pet policy.
                     </p>
                 </div>
                 <div className={styles.contentContainer}>

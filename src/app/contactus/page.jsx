@@ -32,7 +32,7 @@ export default function Contactus() {
                                 alt='Phone icon'
                                 className={styles.icons}
                             />
-                            (123) 456-7890
+                            (971) 707-3095
                         </p>
                     </div>
                     <div className={styles.horizontalLine}></div>
@@ -67,7 +67,7 @@ export default function Contactus() {
                         />
                         <div>
                             <p>Monday - Friday:</p>
-                            <p>10:00 AM - 6:00 PM</p>
+                            <p>9:00 AM - 5:00 PM</p>
                             <br />
                             <p>Saturday / Sunday:</p>
                             <p>CLOSED</p>
