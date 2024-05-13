@@ -39,6 +39,7 @@ const units = [
         bed: '1 Bed',
         bath: '1',
         sqft: '608',
+        pics: ['/floorplans/mapping/b/1.jpg', '/floorplans/mapping/b/2.jpg'],
     },
     {
         id: 2,

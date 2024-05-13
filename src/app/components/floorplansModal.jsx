@@ -11,6 +11,7 @@ import verticalLine from '/public/icons/verticalLine.png';
 import Link from 'next/link';
 import logoOnly from '/public/logoOnly.png';
 import { motion } from 'framer-motion';
+import MultiCarousel from './multiCarousel';
 
 export default function FloorplansModal({ isOpen, onClose, unit }) {
     if (!isOpen) return null;
@@ -30,12 +31,16 @@ export default function FloorplansModal({ isOpen, onClose, unit }) {
                     onClick={(e) => e.stopPropagation()}
                 >
                     <div className={styles.modal}>
-                        <Image
+                        {/* <Image
                             src={unit.images}
                             alt={unit.name}
                             className={styles.unitPic}
                             width={500}
                             height={500}
+                        /> */}
+                        <MultiCarousel
+                            floorplan={unit.images}
+                            pics={unit.pics}
                         />
                         <div className={styles.unitInfo}>
                             <div className={styles.unitHeader}>

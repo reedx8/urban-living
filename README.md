@@ -17,8 +17,8 @@ See package.json -> dependencies for more.
 
 1. React
 2. Next.js
-3. React Alice Carousel - https://www.npmjs.com/package/react-alice-carousel
-    - Second option (not installed): https://www.npmjs.com/package/react-multi-carousel
+3. React Alice Carousel (photo page) - https://www.npmjs.com/package/react-alice-carousel
+4. React-Multi-Carousel (floorplansModal): https://www.npmjs.com/package/react-multi-carousel
     - third option (not installed): https://www.npmjs.com/package/react-simple-image-slider
-4. EmailJS - https://www.emailjs.com/
-5. Framer Motion - https://www.framer.com/motion/
+5. EmailJS - https://www.emailjs.com/
+6. Framer Motion - https://www.framer.com/motion/
