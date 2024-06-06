@@ -25,7 +25,7 @@ const units = [
         name: 'Space A',
         // image: unit1,
         images: '/floorplans/spacea.jpg', // dynamic imports
-        price: '$',
+        price: '$1,750',
         bed: '1 Bed',
         bath: '1',
         sqft: '505',
@@ -35,7 +35,7 @@ const units = [
         name: 'Space B',
         // images: unit2,
         images: '/floorplans/spaceb.jpg',
-        price: '$',
+        price: '$1,875',
         bed: '1 Bed',
         bath: '1',
         sqft: '608',
@@ -45,7 +45,7 @@ const units = [
         name: 'Space C',
         // images: unit3,
         images: '/floorplans/spacec.jpg',
-        price: '$',
+        price: '$1,850',
         bed: '1 Bed',
         bath: '1',
         sqft: '639',
@@ -55,7 +55,7 @@ const units = [
         name: 'Space D',
         // images: unit4,
         images: '/floorplans/spaced.jpg',
-        price: '$',
+        price: '$1,750',
         bed: '1 Bed',
         bath: '1',
         sqft: '513',
@@ -65,7 +65,7 @@ const units = [
         name: 'Space E',
         // images: unit5,
         images: '/floorplans/spacee.jpg',
-        price: '$',
+        price: '$2,150',
         bed: '1 Bed',
         bath: '1',
         sqft: '742',
@@ -75,7 +75,7 @@ const units = [
         name: 'Space F',
         // images: unit6,
         images: '/floorplans/spacef.jpg',
-        price: '$',
+        price: '$1,950',
         bed: '1 Bed',
         bath: '1',
         sqft: '685',
@@ -85,7 +85,7 @@ const units = [
         name: 'Space G',
         // images: unit7,
         images: '/floorplans/spaceg.jpg',
-        price: '$',
+        price: '$1,650',
         bed: '1 Bed',
         bath: '1',
         sqft: '470',
@@ -95,7 +95,7 @@ const units = [
         name: 'Space H',
         // images: unit8,
         images: '/floorplans/spaceh.jpg',
-        price: '$',
+        price: '$1,510',
         bed: 'Studio',
         bath: '1',
         sqft: '384',
@@ -105,7 +105,7 @@ const units = [
         name: 'Space I',
         // images: unit9,
         images: '/floorplans/spacei.jpg',
-        price: '$',
+        price: '$2,150',
         bed: '1 Bed',
         bath: '1',
         sqft: '742',
@@ -173,7 +173,7 @@ export default function Floorplans() {
                                         <p>
                                             Starting at{' '}
                                             <span className={styles.price}>
-                                                $1,800
+                                                {unit.price}
                                             </span>
                                         </p>
                                     </div>
