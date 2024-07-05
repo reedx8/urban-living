@@ -144,9 +144,7 @@
     flex-direction: column;
     justify-content: space-between;
     line-height: 30px;
-    /* height: 500px; */
-    /* margin-right: 10px; */
-    /* border: 1px solid blue; */
+    gap: 20px;
 }
 .amenitiesCards {
     display: flex;
@@ -336,6 +334,9 @@
     /* add dark shadow */
     /* filter: drop-shadow(0 0 0.5rem black); */
 }
+.buttonContainer {
+    width: 160px;
+}
 
 .buttonStyle {
     /* background-color: #007bff; */
@@ -354,6 +355,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    /* width: 200px; */
 }
 
 .buttonStyle:hover {
@@ -361,6 +363,11 @@
     color: black;
     transition: background-color 0.3s;
     box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
+}
+
+.buttonContainer2 {
+    width: 190px;
+    /* border: 1px solid grey; */
 }
 
 .buttonStyle2 {
@@ -387,9 +394,11 @@
     box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
     display: flex;
     justify-content: center;
+    width: 100%;
 }
 
 .buttonStyle2 > p {
+    /* .buttonText { */
     background: linear-gradient(135deg, #d2b69f 0, #a47947 100%);
     background: -webkit-linear-gradient(45deg, #d2b69f 0, #a47947 100%);
     background: -moz-linear-gradient(45deg, #d2b69f 0, #a47947 100%);
@@ -398,9 +407,11 @@
     background-clip: text;
     color: #c39f75;
     filter: drop-shadow(0 0 0.3rem black);
+    /* background-color: transparent; */
 }
 
 .buttonStyle2:hover {
+    /* .buttonContainer2:hover { */
     background-color: var(--darkgreen);
     border: 1px solid var(--darkgreen);
     /* background-color: var(--altWhite); */

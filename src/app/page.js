@@ -14,6 +14,7 @@ import blackLine from '/public/icons/blackLine.png';
 import whiteLine from '/public/icons/whiteLine.png';
 import lockIcon from '/public/icons/lock.png';
 import { motion } from 'framer-motion';
+import explore from '/public/images/explore.png';
 
 export default function Home() {
     return (
@@ -157,7 +158,8 @@ export default function Home() {
                                     filter: 'drop-shadow(0 0 0.2rem var(--khaki))',
                                 }}
                             >
-                                Amenities, Upgraded
+                                {/* Amenities, Upgraded */}
+                                Amenity-Rich Living
                             </h2>
                             <br />
                         </div>
@@ -171,6 +173,7 @@ export default function Home() {
                     >
                         <div className={styles.secContainer}>
                             <div className={styles.secInfo}>
+                                {/* <p style={{ marginBottom: '20px' }}> */}
                                 <p>
                                     We offer a peaceful retreat with an array of
                                     convenient amenities that cater to a vibrant
@@ -188,23 +191,42 @@ export default function Home() {
                                     urban living with the convenience of modern
                                     amenities.
                                 </p>
-                                <Link href='/amenities'>
-                                    <button
-                                        // type='button'
-                                        // value='VIEW AMENITIES'
-                                        className={styles.buttonStyle}
-                                        /* Just navigate to contactus page for now */
+
+                                <div className={styles.buttonContainer}>
+                                    <Link href='/amenities'>
+                                        <button
+                                            // type='button'
+                                            // value='VIEW AMENITIES'
+                                            className={styles.buttonStyle}
+                                            /* Just navigate to contactus page for now */
+                                        >
+                                            <p>VIEW AMENITIES</p>{' '}
+                                            <Image
+                                                src={doubleArrowIcon}
+                                                width={15}
+                                                height={15}
+                                                alt='contact us button'
+                                                style={{
+                                                    marginLeft: '4px',
+                                                }}
+                                            />
+                                        </button>
+                                    </Link>
+                                </div>
+                                <div>
+                                    <Link
+                                        href='https://www.exploredowntowntigard.com/about/'
+                                        target='_blank'
                                     >
-                                        <p>VIEW AMENITIES</p>{' '}
                                         <Image
-                                            src={doubleArrowIcon}
-                                            width={15}
-                                            height={15}
-                                            alt='contact us button'
+                                            src={explore}
+                                            width={125}
+                                            height={125}
+                                            alt='explore downtown tigard'
                                             style={{ marginLeft: '4px' }}
                                         />
-                                    </button>
-                                </Link>
+                                    </Link>
+                                </div>
                             </div>
                             <div className={styles.amenitiesCards}>
                                 <div className={styles.amenitiesCard}>
@@ -292,11 +314,14 @@ export default function Home() {
                             View our available units today and contact our
                             leasing office for your personal tour.
                         </p>
-                        <Link href='/floorplans'>
-                            <button className={styles.buttonStyle2}>
-                                <p>VIEW FLOOR PLANS</p>
-                            </button>
-                        </Link>
+                        <div className={styles.buttonContainer2}>
+                            <Link href='/floorplans'>
+                                <button className={styles.buttonStyle2}>
+                                    {/* <p className={styles.buttonText}> */}
+                                    <p>VIEW FLOOR PLANS</p>
+                                </button>
+                            </Link>
+                        </div>
                     </div>
                 </section>
                 <section className={styles.fourthSection}>
