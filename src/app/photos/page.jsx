@@ -2,7 +2,7 @@
 import Carousel from '../components/carousel';
 import styles from './photos.module.css';
 import Image from 'next/image';
-import photoBanner from '/public/banners/photogallery.png';
+import photoBanner from '/public/banners/photo-gallery.png';
 import blackLine from '/public/icons/blackLine.png';
 
 export default function Photos() {

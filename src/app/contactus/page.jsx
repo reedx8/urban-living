@@ -3,7 +3,7 @@ import Image from 'next/image';
 import phoneIcon from '/public/icons/phone2.png';
 import locationIcon from '/public/icons/location.png';
 import timeIcon from '/public/icons/time.png';
-import contactusBanner from '/public/banners/contactus.png';
+import contactusBanner from '/public/banners/contact-us.png';
 import styles from './contactus.module.css';
 
 export default function Contactus() {

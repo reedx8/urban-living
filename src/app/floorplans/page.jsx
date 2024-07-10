@@ -1,7 +1,7 @@
 'use client';
 import { useState, useEffect } from 'react';
 import Image from 'next/image';
-import floorplansBanner from '/public/banners/floorplans.png';
+import floorplansBanner from '/public/banners/floor-plans.png';
 import styles from './floorplans.module.css';
 // import unit1 from '../assets/floorplans/unit1.jpg';
 // import unit2 from '../assets/floorplans/unit2.jpg';
