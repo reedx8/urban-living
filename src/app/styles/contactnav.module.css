@@ -1,0 +1,62 @@
+@media (max-width: 650px) {
+    .contactBar {
+        display: none;
+    }
+}
+
+@media (min-width: 651px) {
+    .contactBar {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        display: flex;
+        justify-content: space-between;
+        /* justify-content: right; */
+        color: var(--altWhite);
+        /* color: white; */
+        font-size: 1rem;
+        font-weight: 300;
+        background: rgba(62, 71, 63, 0.2);
+        backdrop-filter: blur(10px);
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+
+        /* background: rgba(0, 0, 0, 0.5)) */
+        /* background: rgba(255, 255, 255, 0.2); */
+
+        padding: 0.5rem;
+        align-items: center;
+    }
+    .contactLinks,
+    .locationLink {
+        display: flex;
+        gap: 0.5rem;
+        align-items: center;
+        /* justify-content: center; */
+    }
+
+    .phoneDiv {
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+    }
+
+    .applyNowBtn {
+        background: var(--gold);
+        /* color: var(--darkgreen); */
+        padding: 0.5rem 1rem;
+        border-radius: 5px;
+        font-weight: 500;
+        font-size: 0.8rem;
+        cursor: pointer;
+        border: 1px solid black;
+        /* transition: background 0.3s; */
+    }
+
+    .applyNowBtn:hover {
+        background-color: var(--khaki);
+        color: black;
+        transition: background-color 0.3s;
+        /* box-shadow: 0 0 30px rgba(0, 0, 0, 0.5); */
+    }
+}

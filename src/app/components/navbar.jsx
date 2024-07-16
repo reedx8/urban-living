@@ -7,6 +7,7 @@ import hamburger from '/public/icons/hamburger.png';
 import styles from '../styles/navbar.module.css';
 import { motion } from 'framer-motion';
 import logoOnly from '/public/logoOnly.png';
+import apply from '/public/icons/apply.png';
 
 export default function Navbar() {
     const [currentRoute, setCurrentRoute] = useState('/');
@@ -154,6 +155,21 @@ export default function Navbar() {
                             }
                         >
                             CONTACT US
+                        </Link>
+                        <Link
+                            href='https://integrityfirstpropertymanagementllc.managebuilding.com/Resident/rental-application/new'
+                            className={styles.applyNowLink}
+                            // className={styles.mobileLink}
+                            target='_blank'
+                        >
+                            <Image
+                                src={apply}
+                                alt='apply now icon'
+                                width={20}
+                                height={'auto'}
+                                className={styles.applyNowIcon}
+                            />
+                            APPLY NOW
                         </Link>
                     </div>
                 </div>

@@ -4,11 +4,13 @@ import styles from './photos.module.css';
 import Image from 'next/image';
 import photoBanner from '/public/banners/photo-gallery.png';
 import blackLine from '/public/icons/blackLine.png';
+import ContactNav from '@/app/components/contactnav';
 
 export default function Photos() {
     return (
         <main className={styles.main}>
             <section className={styles.headingSection}>
+                <ContactNav />
                 <Image
                     src={photoBanner}
                     priority={true}

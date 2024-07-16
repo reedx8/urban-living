@@ -18,6 +18,7 @@ import sqftIcon from '/public/icons/dim.png';
 import Link from 'next/link';
 import FloorplansModal from '../components/floorplansModal';
 import { motion } from 'framer-motion';
+import ContactNav from '@/app/components/contactnav';
 
 const units = [
     {
@@ -131,7 +132,8 @@ export default function Floorplans() {
     return (
         <main className={styles.main}>
             {/* {imageClick && <FloorplansModal />} */}
-            <section>
+            <section className={styles.bannerSection}>
+                <ContactNav />
                 <Image
                     src={floorplansBanner}
                     priority={true}

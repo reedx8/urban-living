@@ -2,6 +2,9 @@
     background-color: var(--altWhite);
     /* padding: 3rem; */
 }
+.headingSection {
+    position: relative;
+}
 .headingPicture {
     width: 100%;
     height: auto;

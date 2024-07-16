@@ -1,6 +1,9 @@
 .main {
     background-color: var(--altWhite);
 }
+.bannerSection {
+    position: relative;
+}
 .amenitiesPic {
     width: 100%;
     height: auto;

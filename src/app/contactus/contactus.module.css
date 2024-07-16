@@ -1,11 +1,14 @@
 .pageContent {
     display: flex;
-    /* flex-direction: column; */
     justify-content: center;
+    /* height: 900px; */
     align-items: center;
     gap: 2rem;
-    /* background-color: var(--altWhite); */
     flex-wrap: wrap;
+}
+
+.bannerSection {
+    position: relative;
 }
 
 .contactInfoContainer {

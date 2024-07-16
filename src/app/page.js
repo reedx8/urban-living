@@ -15,11 +15,13 @@ import whiteLine from '/public/icons/whiteLine.png';
 import lockIcon from '/public/icons/lock.png';
 import { motion } from 'framer-motion';
 import explore from '/public/images/explore.png';
+import ContactNav from './components/contactnav';
 
 export default function Home() {
     return (
         <main className={styles.main}>
             <section className={styles.heroSection}>
+                <ContactNav />
                 <Image
                     src={fullLogo}
                     alt='Big Logo'

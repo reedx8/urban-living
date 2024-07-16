@@ -5,11 +5,14 @@ import locationIcon from '/public/icons/location.png';
 import timeIcon from '/public/icons/time.png';
 import contactusBanner from '/public/banners/contact-us.png';
 import styles from './contactus.module.css';
+import Link from 'next/link';
+import ContactNav from '@/app/components/contactnav';
 
 export default function Contactus() {
     return (
         <main>
-            <section>
+            <section className={styles.bannerSection}>
+                <ContactNav />
                 <Image
                     src={contactusBanner}
                     priority={true}
@@ -18,6 +21,12 @@ export default function Contactus() {
                 />
             </section>
             <section className={styles.pageContent}>
+                {/* <iframe
+                    src='https://integrityfirstpropertymanagementllc.managebuilding.com/Resident/Public/Contact?hidenav=true'
+                    width='801'
+                    height='740'
+                    frameborder='0'
+                ></iframe> */}
                 <div className={styles.contactFormContainer}>
                     <p className={styles.reqFieldText}>
                         * indicates required fields.
@@ -32,7 +41,7 @@ export default function Contactus() {
                                 alt='Phone icon'
                                 className={styles.icons}
                             />
-                            (971) 707-3095
+                            <Link href='tel:+19717073095'>(971) 707-3095</Link>
                         </p>
                     </div>
                     <div className={styles.horizontalLine}></div>
@@ -43,7 +52,6 @@ export default function Contactus() {
                             className={styles.icons}
                         />
                         <div>
-                            {/* / make this address a link to google maps: */}
                             <a
                                 href='https://maps.app.goo.gl/8uZK1uzbMaG8oCy67'
                                 target='_blank'

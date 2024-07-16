@@ -2,6 +2,10 @@
     margin: 3rem;
 }
 
+.bannerSection {
+    position: relative;
+}
+
 .floorplansPic {
     width: 100%;
     height: auto;

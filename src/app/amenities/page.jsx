@@ -7,6 +7,7 @@ import paw from '/public/icons/paw.png';
 import group from '/public/icons/group.png';
 import aptmt from '/public/icons/aptmt.png';
 import blackLine from '/public/icons/blackLine.png';
+import ContactNav from '@/app/components/contactnav';
 
 export default function Amenities() {
     const commAmen1 = [
@@ -55,7 +56,8 @@ export default function Amenities() {
 
     return (
         <main className={styles.main}>
-            <section>
+            <section className={styles.bannerSection}>
+                <ContactNav />
                 <Image
                     src={amenitiesBanner}
                     priority={true}
