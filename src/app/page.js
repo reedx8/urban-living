@@ -95,21 +95,23 @@ export default function Home() {
                             {/* <h2 className={styles.h2Text}>Better</h2> */}
                             <br />
                             <p className={styles.introText}>
-                                Urban Living at Fanno Creek is a residence
-                                offering convenience and affordability to the
-                                Tigard area. 
+                                Discover Urban Living at Fanno Creek, Tigard's
+                                premier address, where modern amenities, nature,
+                                and community unite.
                             </p>
                             <br />
                             <p className={styles.introText}>
-                                This residence is a 3 story building with 22
-                                apartments total. It is situated right in the
-                                center of Tigard’s main street, just a short
-                                walk from pubs, coffee shops, and public
-                                transportation. Every apartment has been
-                                upgraded with modern appliances and simple,
-                                clean interior. Welcome home, and experience
-                                better living, here at Urban Living at Fanno
-                                Creek!
+                                These newly constructed 2024 apartments offer
+                                commuters a blend of convenience and
+                                tranquility, just minutes from the TriMet
+                                Transit Center and WES commuter rail. Each unit
+                                boasts high-grade noise-blocking windows and
+                                walls, dedicated heating and cooling systems,
+                                and high-speed fiber-optic internet access.
+                                Safety is a top priority, with key
+                                fob-controlled entry, elevator access, and
+                                secure package services for added convenience
+                                and peace of mind.
                             </p>
                         </motion.div>
                     </div>
@@ -177,21 +179,20 @@ export default function Home() {
                             <div className={styles.secInfo}>
                                 {/* <p style={{ marginBottom: '20px' }}> */}
                                 <p>
-                                    We offer a peaceful retreat with an array of
-                                    convenient amenities that cater to a vibrant
-                                    and connected lifestyle. The community
-                                    features controlled access, 24-hour on-site
-                                    maintenance, and vibrant communal spaces
-                                    like a lively plaza and plentiful
-                                    ground-floor retail options.
+                                    Residents will enjoy the vibrant community
+                                    feel, with the AVA Roasteria Coffee Shop,
+                                    Bakery and the Roastery/Coffee Cocktail Bar
+                                    on the first floor. There is also easy
+                                    access to the picturesque Fanno Creek Trail
+                                    and Tigard’s charming blend of dining,
+                                    retail, and entertainment options.
                                 </p>
                                 <p>
                                     {' '}
-                                    Only minutes away from grocery stores and 15
-                                    minutes from downtown Portland, Urban Living
-                                    at Fanno Creek blends the best of peaceful
-                                    urban living with the convenience of modern
-                                    amenities.
+                                    Urban Living at Fanno Creek combines the
+                                    best city convenience, natural beauty, and a
+                                    strong sense of community, making it the
+                                    ideal place to call home.
                                 </p>
 
                                 <div className={styles.buttonContainer}>
