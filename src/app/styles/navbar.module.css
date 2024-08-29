@@ -8,12 +8,14 @@
     padding: 0.5rem 2rem;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     width: 100%;
-    overflow-x: hidden;
+    overflow-x: visible;
+    /* overflow-x: hidden; */
 
     background: rgba(255, 255, 255, 0.6);
     backdrop-filter: blur(10px);
     /* max-width: 100%; */
-    height: 70px; /* assures navbar is always 70px across all devices/browsers (hero pic on home page depends on this value) */
+    /* assures navbar is always 70px across all devices/browsers (hero pic on home page depends on this value) */
+    height: 70px;
     /* overflow-y: hidden; */
 }
 
@@ -36,7 +38,8 @@
     /* font-weight: bold; */
 }
 
-.link:hover {
+.link:hover,
+.floorplansBtn:hover {
     /* color: var(--gold); */
     color: var(--khaki);
     /* text-decoration: underline; */
@@ -44,11 +47,42 @@
 }
 
 .link,
-.activeLink {
+.activeLink,
+.floorplansBtn {
     /* font-weight: 400; */
     font-size: 0.85rem;
     /* opacity: 0.8; */
     letter-spacing: 0.9px;
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+}
+
+.floorplansContainer {
+    /* display: flex; */
+    /* flex-direction: column; */
+    /* gap: 0.5rem; */
+    z-index: 10000;
+    /* overflow-y: visible; */
+    /* position: relative; */
+    /* height: 100px; */
+}
+.floorplansBtn {
+    border: none;
+    background: none;
+    cursor: pointer;
+}
+
+.floorplansDropdown {
+    display: flex;
+    flex-direction: column;
+    z-index: 100000;
+    gap: 1rem;
+    position: absolute;
+    padding: 1rem;
+    margin-top: 0.5rem;
+    background: rgba(255, 255, 255, 0.6);
+    backdrop-filter: blur(10px);
 }
 
 /* Mobile view */

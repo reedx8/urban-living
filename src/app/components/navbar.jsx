@@ -4,19 +4,24 @@ import { useState, useEffect } from 'react';
 import { usePathname } from 'next/navigation';
 import Image from 'next/image';
 import hamburger from '/public/icons/hamburger.png';
-import styles from '../styles/navbar.module.css';
+import styles from '@/app/styles/navbar.module.css';
 import { motion } from 'framer-motion';
 import logoOnly from '/public/logoOnly.png';
 import apply from '/public/icons/apply.png';
+import arrow from '/public/icons/arrowDown.png';
 
 export default function Navbar() {
     const [currentRoute, setCurrentRoute] = useState('/');
     const [menuOpen, setMenuOpen] = useState(false);
-
+    const [floorplansDropdown, setFloorplansDropdown] = useState(false);
     const pages = ['/', '/floorplans', '/photos', '/amenities', '/contactus'];
-
     const pathname = usePathname();
     // const searchParams = useSearchParams();
+
+    const showFloorplansDropdown = () => {
+        setFloorplansDropdown(!floorplansDropdown);
+    };
+
     useEffect(() => {
         setCurrentRoute(pathname);
         setMenuOpen(false);
@@ -52,16 +57,49 @@ export default function Navbar() {
                     >
                         HOME
                     </Link>
-                    <Link
-                        href='/floorplans'
-                        className={
-                            currentRoute === '/floorplans'
-                                ? styles.activeLink
-                                : styles.link
-                        }
-                    >
-                        FLOOR PLANS
-                    </Link>
+                    <div className={styles.floorplansContainer}>
+                        <button
+                            className={styles.floorplansBtn}
+                            onClick={() => showFloorplansDropdown()}
+                        >
+                            <div>FLOOR PLANS</div>
+                            <div>
+                                <Image
+                                    src={arrow}
+                                    alt='arrow'
+                                    width={12}
+                                    height={'auto'}
+                                    className={styles.arrow}
+                                />
+                            </div>
+                        </button>
+                        {floorplansDropdown && (
+                            <div className={styles.floorplansDropdown}>
+                                <Link
+                                    href='/floorplans'
+                                    className={
+                                        currentRoute === '/floorplans'
+                                            ? styles.activeLink
+                                            : styles.link
+                                    }
+                                    onClick={() => setFloorplansDropdown(false)}
+                                >
+                                    <div>FLOOR PLANS</div>
+                                </Link>
+                                <Link
+                                    href='/virtualtours'
+                                    className={
+                                        currentRoute === '/virtualtours'
+                                            ? styles.activeLink
+                                            : styles.link
+                                    }
+                                    onClick={() => setFloorplansDropdown(false)}
+                                >
+                                    VIRTUAL TOURS
+                                </Link>
+                            </div>
+                        )}
+                    </div>
                     <Link
                         href='/photos'
                         className={
@@ -104,75 +142,93 @@ export default function Navbar() {
                 </div>
             </nav>
             {menuOpen && (
-                <div className={styles.mobileMenu}>
-                    <div className={styles.mobileLinks}>
-                        <Link
-                            href='/'
-                            className={
-                                currentRoute === '/'
-                                    ? styles.mobileActiveLink
-                                    : styles.mobileLink
-                            }
-                        >
-                            HOME
-                        </Link>
-                        <Link
-                            href='/floorplans'
-                            className={
-                                currentRoute === '/floorplans'
-                                    ? styles.mobileActiveLink
-                                    : styles.mobileLink
-                            }
-                        >
-                            FLOOR PLANS
-                        </Link>
-                        <Link
-                            href='/photos'
-                            className={
-                                currentRoute === '/photos'
-                                    ? styles.mobileActiveLink
-                                    : styles.mobileLink
-                            }
-                        >
-                            PHOTOS
-                        </Link>
-                        <Link
-                            href='/amenities'
-                            className={
-                                currentRoute === '/amenities'
-                                    ? styles.mobileActiveLink
-                                    : styles.mobileLink
-                            }
-                        >
-                            AMENITIES
-                        </Link>
-                        <Link
-                            href='/contactus'
-                            className={
-                                currentRoute === '/contactus'
-                                    ? styles.mobileActiveLink
-                                    : styles.mobileLink
-                            }
-                        >
-                            CONTACT US
-                        </Link>
-                        <Link
-                            href='https://integrityfirstpropertymanagementllc.managebuilding.com/Resident/rental-application/new'
-                            className={styles.applyNowLink}
-                            // className={styles.mobileLink}
-                            target='_blank'
-                        >
-                            <Image
-                                src={apply}
-                                alt='apply now icon'
-                                width={20}
-                                height={'auto'}
-                                className={styles.applyNowIcon}
-                            />
-                            APPLY NOW
-                        </Link>
+                // / use framer motion to animate this menu by adding pixels to expand it /
+                <motion.div
+                    // className={styles.mobileMenu}
+                    initial={{ y: '-100%' }}
+                    animate={{ y: 0 }}
+                    exit={{ x: '-100%' }}
+                >
+                    <div className={styles.mobileMenu}>
+                        <div className={styles.mobileLinks}>
+                            <Link
+                                href='/'
+                                className={
+                                    currentRoute === '/'
+                                        ? styles.mobileActiveLink
+                                        : styles.mobileLink
+                                }
+                            >
+                                HOME
+                            </Link>
+                            <Link
+                                href='/floorplans'
+                                className={
+                                    currentRoute === '/floorplans'
+                                        ? styles.mobileActiveLink
+                                        : styles.mobileLink
+                                }
+                            >
+                                FLOOR PLANS
+                            </Link>
+                            <Link
+                                href='/virtualtours'
+                                className={
+                                    currentRoute === '/virtualtours'
+                                        ? styles.mobileActiveLink
+                                        : styles.mobileLink
+                                }
+                            >
+                                VIRTUAL TOURS
+                            </Link>
+                            <Link
+                                href='/photos'
+                                className={
+                                    currentRoute === '/photos'
+                                        ? styles.mobileActiveLink
+                                        : styles.mobileLink
+                                }
+                            >
+                                PHOTOS
+                            </Link>
+                            <Link
+                                href='/amenities'
+                                className={
+                                    currentRoute === '/amenities'
+                                        ? styles.mobileActiveLink
+                                        : styles.mobileLink
+                                }
+                            >
+                                AMENITIES
+                            </Link>
+                            <Link
+                                href='/contactus'
+                                className={
+                                    currentRoute === '/contactus'
+                                        ? styles.mobileActiveLink
+                                        : styles.mobileLink
+                                }
+                            >
+                                CONTACT US
+                            </Link>
+                            <Link
+                                href='https://integrityfirstpropertymanagementllc.managebuilding.com/Resident/rental-application/new'
+                                className={styles.applyNowLink}
+                                // className={styles.mobileLink}
+                                target='_blank'
+                            >
+                                <Image
+                                    src={apply}
+                                    alt='apply now icon'
+                                    width={20}
+                                    height={'auto'}
+                                    className={styles.applyNowIcon}
+                                />
+                                APPLY NOW
+                            </Link>
+                        </div>
                     </div>
-                </div>
+                </motion.div>
             )}
         </>
     );

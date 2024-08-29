@@ -149,9 +149,9 @@ export default function Floorplans() {
                     {units.map((unit) => (
                         <motion.div
                             key={unit.id}
-                            initial={{ y: 70 }}
-                            whileInView={{ y: 0 }}
-                            transition={{ ease: 'easeInOut', duration: 0.5 }}
+                            initial={{ y: 70, opacity: 0 }}
+                            whileInView={{ y: 0, opacity: 1 }}
+                            transition={{ ease: 'easeInOut', duration: 0.75 }}
                             viewport={{ once: true }}
                         >
                             <div key={unit.name} className={styles.unitCard}>

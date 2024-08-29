@@ -1,0 +1,37 @@
+.main {
+    background-color: white;
+    /* width: 100%; */
+}
+
+.bannerSection {
+    position: relative;
+}
+
+.banner {
+    width: 100%;
+    height: auto;
+}
+
+.pageContent {
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    /* justify-content: center; */
+    gap: 2rem;
+    /* width: 100vw; */
+}
+.tour {
+    margin: auto;
+    /* max-width: 853px; */
+    /* height: auto; */
+}
+@media (min-width: 900px) {
+    .tour {
+        max-width: 853px;
+    }
+}
+.tour > h1 {
+    margin-bottom: 0.5rem;
+    /* color: var(--gold); */
+}
