@@ -29,13 +29,16 @@ export default function Home() {
                     priority={true}
                     quality={100}
                 />
-                <Link href='/contactus'>
+                <Link
+                    href='https://www.apartments.com/urban-living-at-fanno-creek-portland-or/lbtycsg/'
+                    target='_blank'
+                >
                     <button
                         // type='button'
                         // value='CONTACT US'
                         className={styles.buttonStyle}
                     >
-                        <p>CONTACT US</p>
+                        <p>CHECK AVAILABILITY</p>
                         <Image
                             src={doubleArrowIcon}
                             width={15}
@@ -307,6 +310,17 @@ export default function Home() {
                             </div>
                         </div>
                     </motion.div>
+                </section>
+                <section className={styles.mapSection}>
+                    <iframe
+                        src='https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5599.984850198117!2d-122.77646502434976!3d45.429654035743866!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x54950d2114301669%3A0x2945ff561fbec8c0!2s12547%20SW%20Main%20St%2C%20Tigard%2C%20OR%2097223!5e0!3m2!1sen!2sus!4v1724960230462!5m2!1sen!2sus'
+                        width='100%'
+                        height='500'
+                        style={{ border: 0, padding: 0, margin: 0 }}
+                        allowfullscreen=''
+                        loading='lazy'
+                        referrerpolicy='no-referrer-when-downgrade'
+                    ></iframe>
                 </section>
                 <section className={styles.thirdSection}>
                     <div className={styles.thirdContainer}>

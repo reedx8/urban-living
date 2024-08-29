@@ -303,6 +303,11 @@
     filter: drop-shadow(0 0 0.5rem black);
 }
 
+.mapSection {
+    padding: 0 !important;
+    line-height: 0;
+}
+
 .h2Text {
     font-weight: 500;
     font-size: 3rem;
