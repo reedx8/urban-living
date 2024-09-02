@@ -14,7 +14,7 @@ export default function Photos() {
                 <Image
                     src={photoBanner}
                     priority={true}
-                    alt='photo banner'
+                    alt='photo banner of webpage'
                     className={styles.headingPicture}
                 />
                 {/* <video

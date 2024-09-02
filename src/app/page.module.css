@@ -308,6 +308,12 @@
     line-height: 0;
 }
 
+.imageSection {
+    display: flex;
+    justify-content: center;
+    background-color: var(--altWhite);
+}
+
 .h2Text {
     font-weight: 500;
     font-size: 3rem;

@@ -200,7 +200,7 @@ export default function Floorplans() {
                                     <p>
                                         <Image
                                             src={sqftIcon}
-                                            alt='sqft icon'
+                                            alt='square feet icon'
                                             className={styles.icons}
                                         />
                                         {unit.sqft} Sq. Ft.

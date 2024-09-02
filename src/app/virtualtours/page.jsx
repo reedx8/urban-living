@@ -14,7 +14,7 @@ export default function VirtualTours() {
                 <Image
                     src={vtourBanner}
                     priority={true}
-                    alt='3D videos banner'
+                    alt='Virtual tour webpage banner'
                     className={styles.banner}
                 />
             </section>
@@ -34,8 +34,8 @@ export default function VirtualTours() {
                             // width='853'
                             // height='480'
                             src='https://my.matterport.com/show/?m=ULMGqYjpbuH'
-                            frameborder='0'
-                            allowfullscreen
+                            frameBorder='0'
+                            allowFullScreen
                             allow='xr-spatial-tracking'
                         ></iframe>
                     </div>
@@ -53,8 +53,8 @@ export default function VirtualTours() {
                             width='100%'
                             height='480'
                             src='https://my.matterport.com/show/?m=bHoz3wWTPQE'
-                            frameborder='0'
-                            allowfullscreen
+                            frameBorder='0'
+                            allowFullScreen
                             allow='xr-spatial-tracking'
                         ></iframe>
                     </div>
@@ -72,8 +72,8 @@ export default function VirtualTours() {
                             width='100%'
                             height='480'
                             src='https://my.matterport.com/show/?m=B9mHLjjTJAe'
-                            frameborder='0'
-                            allowfullscreen
+                            frameBorder='0'
+                            allowFullScreen
                             allow='xr-spatial-tracking'
                         ></iframe>
                     </div>
@@ -91,8 +91,8 @@ export default function VirtualTours() {
                             width='100%'
                             height='480'
                             src='https://my.matterport.com/show/?m=8g4JrL9zVJh'
-                            frameborder='0'
-                            allowfullscreen
+                            frameBorder='0'
+                            allowFullScreen
                             allow='xr-spatial-tracking'
                         ></iframe>
                     </div>

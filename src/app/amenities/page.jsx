@@ -9,6 +9,13 @@ import aptmt from '/public/icons/aptmt.png';
 import blackLine from '/public/icons/blackLine.png';
 import ContactNav from '@/app/components/contactnav';
 
+export const metadata = {
+    title: 'Urban Living at Fanno Creek | Amenities',
+    description:
+        'Discover our amenities at Urban Living. From comfortable units to modern amenities, we have it all.',
+    canonicalUrl: 'https://www.urbanlivingatfanno.com/amenities',
+};
+
 export default function Amenities() {
     const commAmen1 = [
         'On-site maintenance',

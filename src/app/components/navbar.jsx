@@ -219,7 +219,7 @@ export default function Navbar() {
                             >
                                 <Image
                                     src={apply}
-                                    alt='apply now icon'
+                                    alt='apply now button'
                                     width={20}
                                     height={'auto'}
                                     className={styles.applyNowIcon}

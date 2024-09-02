@@ -16,6 +16,7 @@ import lockIcon from '/public/icons/lock.png';
 import { motion } from 'framer-motion';
 import explore from '/public/images/explore.png';
 import ContactNav from './components/contactnav';
+import layingPic from '/public/images/laying.jpg';
 
 export default function Home() {
     return (
@@ -43,7 +44,7 @@ export default function Home() {
                             src={doubleArrowIcon}
                             width={15}
                             height={15}
-                            alt='contact us button'
+                            alt='check availablity button'
                             style={{ marginLeft: '4px' }}
                         />
                     </button>
@@ -54,7 +55,7 @@ export default function Home() {
                     <div className={styles.introContainer}>
                         <motion.div
                             // appear from bottom and fade in
-                            initial={{ y: 50, opacity: 0 }}
+                            initial={{ y: 90, opacity: 0 }}
                             whileInView={{ y: 0, opacity: 1 }}
                             transition={{ ease: 'easeInOut', duration: 1 }}
                             viewport={{ once: true }}
@@ -82,7 +83,7 @@ export default function Home() {
                         </motion.div>
                         <motion.div
                             // appear from bottom and fade in
-                            initial={{ y: 50, opacity: 0 }}
+                            initial={{ y: 90, opacity: 0 }}
                             whileInView={{ y: 0, opacity: 1 }}
                             transition={{ ease: 'easeInOut', duration: 1 }}
                             viewport={{ once: true }}
@@ -120,7 +121,7 @@ export default function Home() {
                     </div>
                     <motion.div
                         // appear from bottom and fade in
-                        initial={{ y: 50, opacity: 0 }}
+                        initial={{ y: 90, opacity: 0 }}
                         whileInView={{ y: 0, opacity: 1 }}
                         transition={{ ease: 'easeInOut', duration: 1 }}
                         viewport={{ once: true }}
@@ -131,20 +132,39 @@ export default function Home() {
                                 alt='Building picture'
                                 width={400}
                                 height={'auto'}
+                                style={{ pointerEvents: 'none' }}
                             />
                             <Image
                                 src={kitchenPic}
                                 alt='Kitchen picture'
                                 width={400}
                                 height={'auto'}
+                                style={{ pointerEvents: 'none' }}
                             />
                         </div>
                     </motion.div>
                 </section>
+                {/* <section className={styles.imageSection}>
+                    <motion.div
+                        // appear from bottom and fade in
+                        initial={{ x: 100, opacity: 0 }}
+                        whileInView={{ x: 0, opacity: 1 }}
+                        transition={{ ease: 'easeInOut', duration: 1 }}
+                        viewport={{ once: true }}
+                    >
+                        <Image
+                            src={layingPic}
+                            alt='Picture of 2 people laying down'
+                            width={'100%'}
+                            height={'auto'}
+                            style={{ pointerEvents: 'none' }}
+                        />
+                    </motion.div>
+                </section> */}
                 <section className={styles.secSection}>
                     <motion.div
                         // appear from bottom and fade in
-                        initial={{ y: 50, opacity: 0 }}
+                        initial={{ y: 90, opacity: 0 }}
                         whileInView={{ y: 0, opacity: 1 }}
                         transition={{ ease: 'easeInOut', duration: 1 }}
                         viewport={{ once: true }}
@@ -173,7 +193,7 @@ export default function Home() {
                     </motion.div>
                     <motion.div
                         // appear from bottom and fade in
-                        initial={{ y: 50, opacity: 0 }}
+                        initial={{ y: 90, opacity: 0 }}
                         whileInView={{ y: 0, opacity: 1 }}
                         transition={{ ease: 'easeInOut', duration: 1 }}
                         viewport={{ once: true }}
@@ -211,7 +231,7 @@ export default function Home() {
                                                 src={doubleArrowIcon}
                                                 width={15}
                                                 height={15}
-                                                alt='contact us button'
+                                                alt='view amenities button'
                                                 style={{
                                                     marginLeft: '4px',
                                                 }}
@@ -228,7 +248,7 @@ export default function Home() {
                                             src={explore}
                                             width={125}
                                             height={125}
-                                            alt='explore downtown tigard'
+                                            alt='explore downtown tigard link'
                                             style={{ marginLeft: '4px' }}
                                         />
                                     </Link>
@@ -317,9 +337,9 @@ export default function Home() {
                         width='100%'
                         height='500'
                         style={{ border: 0, padding: 0, margin: 0 }}
-                        allowfullscreen=''
+                        allowFullScreen
                         loading='lazy'
-                        referrerpolicy='no-referrer-when-downgrade'
+                        referrerPolicy='no-referrer-when-downgrade'
                     ></iframe>
                 </section>
                 <section className={styles.thirdSection}>
