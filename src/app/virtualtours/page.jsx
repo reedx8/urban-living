@@ -1,10 +1,15 @@
-'use client';
-import React from 'react';
 import Image from 'next/image';
 import styles from './virtualtours.module.css';
 import vtourBanner from '/public/banners/virtualtours.png';
 import ContactNav from '@/app/components/contactnav';
-import { motion } from 'framer-motion';
+import VirtualToursSection from '@/app/components/virtualToursSection';
+
+export const metadata = {
+    title: 'Urban Living at Fanno Creek | Virtual Tours',
+    description:
+        'Enjoy a virtual tour of our apartments with our virtual tour guide. Our virtual tour is a 360-degree tour of our apartments.',
+    canonicalUrl: 'https://www.urbanlivingatfanno.com/virtualtours',
+};
 
 export default function VirtualTours() {
     return (
@@ -19,7 +24,8 @@ export default function VirtualTours() {
                 />
             </section>
             <section className={styles.pageContent}>
-                <motion.div
+                <VirtualToursSection />
+                {/* <motion.div
                     key='vtours'
                     initial={{ y: 90, opacity: 0 }}
                     whileInView={{ y: 0, opacity: 1 }}
@@ -97,6 +103,44 @@ export default function VirtualTours() {
                         ></iframe>
                     </div>
                 </motion.div>
+                <motion.div
+                    key='vtours5'
+                    initial={{ y: 90, opacity: 0 }}
+                    whileInView={{ y: 0, opacity: 1 }}
+                    transition={{ ease: 'easeInOut', duration: 0.75 }}
+                    viewport={{ once: true }}
+                >
+                    <div className={styles.tour}>
+                        <h1>Space I (ADA) - Floor Plan (742SF)</h1>
+                        <iframe
+                            width='100%'
+                            height='480'
+                            src='https://my.matterport.com/show/?m=ikcLo7V2DSs'
+                            frameBorder='0'
+                            allowFullScreen
+                            allow='xr-spatial-tracking'
+                        ></iframe>
+                    </div>
+                </motion.div>
+                <motion.div
+                    key='vtours6'
+                    initial={{ y: 90, opacity: 0 }}
+                    whileInView={{ y: 0, opacity: 1 }}
+                    transition={{ ease: 'easeInOut', duration: 0.75 }}
+                    viewport={{ once: true }}
+                >
+                    <div className={styles.tour}>
+                        <h1>Space D - Floor Plan (513SF)</h1>
+                        <iframe
+                            width='100%'
+                            height='480'
+                            src='https://my.matterport.com/show/?m=5fXuSmMKm8K'
+                            frameBorder='0'
+                            allowFullScreen
+                            allow='xr-spatial-tracking'
+                        ></iframe>
+                    </div>
+                </motion.div> */}
             </section>
         </main>
     );

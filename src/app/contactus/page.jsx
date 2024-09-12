@@ -8,6 +8,13 @@ import styles from './contactus.module.css';
 import Link from 'next/link';
 import ContactNav from '@/app/components/contactnav';
 
+export const metadata = {
+    title: 'Urban Living at Fanno Creek | Contact Us',
+    description:
+        'Contact us today to schedule a tour or to learn more about our apartments.',
+    canonicalUrl: 'https://www.urbanlivingatfanno.com/contactus',
+};
+
 export default function Contactus() {
     return (
         <main>

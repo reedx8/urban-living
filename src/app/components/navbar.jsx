@@ -14,7 +14,7 @@ export default function Navbar() {
     const [currentRoute, setCurrentRoute] = useState('/');
     const [menuOpen, setMenuOpen] = useState(false);
     const [floorplansDropdown, setFloorplansDropdown] = useState(false);
-    const pages = ['/', '/floorplans', '/photos', '/amenities', '/contactus'];
+    const pages = ['/', '/floorplans', '/gallery', '/amenities', '/contactus'];
     const pathname = usePathname();
     // const searchParams = useSearchParams();
 
@@ -101,14 +101,14 @@ export default function Navbar() {
                         )}
                     </div>
                     <Link
-                        href='/photos'
+                        href='/gallery'
                         className={
-                            currentRoute === '/photos'
+                            currentRoute === '/gallery'
                                 ? styles.activeLink
                                 : styles.link
                         }
                     >
-                        PHOTOS
+                        GALLERY
                     </Link>
                     <Link
                         href='/amenities'
@@ -182,14 +182,14 @@ export default function Navbar() {
                                 VIRTUAL TOURS
                             </Link>
                             <Link
-                                href='/photos'
+                                href='/gallery'
                                 className={
-                                    currentRoute === '/photos'
+                                    currentRoute === '/gallery'
                                         ? styles.mobileActiveLink
                                         : styles.mobileLink
                                 }
                             >
-                                PHOTOS
+                                GALLERY
                             </Link>
                             <Link
                                 href='/amenities'

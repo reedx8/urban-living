@@ -1,0 +1,67 @@
+.main {
+    background-color: var(--altWhite);
+    /* padding: 3rem; */
+}
+.headingSection {
+    position: relative;
+}
+.headingPicture {
+    width: 100%;
+    height: auto;
+    /* object-fit: cover; */
+}
+
+.pageContent {
+    display: flex;
+    flex-direction: column;
+    /* flex-wrap: wrap; */
+    /* justify-content: center; */
+    gap: 2rem;
+    padding: 2rem;
+    /* background-color: var(--altWhite); */
+    /* margin: 3rem; */
+}
+
+.h1Text {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    background: linear-gradient(135deg, #d2b69f 0, #a47947 100%);
+    background: -webkit-linear-gradient(45deg, #d2b69f 0, #a47947 100%);
+    background: -moz-linear-gradient(45deg, #d2b69f 0, #a47947 100%);
+    -webkit-text-fill-color: transparent !important;
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: #c39f75;
+    /* filter: drop-shadow(0 0 0.5rem black); */
+    filter: drop-shadow(0 0 0.2rem var(--khaki));
+}
+
+.tabNavigation {
+    display: flex;
+    justify-content: center;
+    gap: 0.25rem;
+}
+.activeTab,
+.inactiveTab {
+    /* background-color: var(--altWhite); */
+    border: none;
+    padding: 0.75rem 1rem;
+    font-size: 0.9rem;
+    cursor: pointer;
+}
+
+.activeTab {
+    background-color: var(--khaki);
+    transition: all 0.5s ease-in-out;
+    /* color: white; */
+}
+.inactiveTab {
+    background-color: var(--altWhite);
+    color: var(--khaki);
+    /* transition: all 0.2s ease-in-out; */
+}
+.line {
+    display: flex;
+    justify-content: center;
+}
