@@ -72,6 +72,13 @@ export default function Amenities() {
                     className={styles.amenitiesPic}
                     width={1200}
                     height={337}
+                    sizes='100vw'
+                    // sizes='(max-width: 1200px) 100vw, 1200px'
+                    // sizes='(max-width: 1200px) 100vw, 50vw'
+                    // sizes='(max-width: 768px) 50vw, (max-width: 1200px) 100vw, 33vw'
+                    // sizes='(max-width: 650px) 650px, 1200px'
+                    // sizes='(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw'
+                    // sizes='(max-width: 768px) 768px, (max-width: 1200px) 1000px, 1200px'
                 />
             </section>
             <section className={styles.pageContent}>
