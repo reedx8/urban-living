@@ -1,6 +1,6 @@
 import styles from './gallery.module.css';
 import Image from 'next/image';
-import photoBanner from '/public/banners/photo-gallery.png';
+import photoBanner from '/public/banners/gallery.png';
 import blackLine from '/public/icons/blackLine.png';
 import ContactNav from '@/app/components/contactnav';
 import GalleryTabs from '@/app/components/galleryTabs';

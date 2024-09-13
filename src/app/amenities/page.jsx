@@ -70,6 +70,8 @@ export default function Amenities() {
                     priority={true}
                     alt='Amenities banner picture'
                     className={styles.amenitiesPic}
+                    width={1200}
+                    height={337}
                 />
             </section>
             <section className={styles.pageContent}>
