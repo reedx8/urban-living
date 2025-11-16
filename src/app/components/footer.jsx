@@ -59,7 +59,7 @@ export default function Footer() {
                         | <Link href='/privacypolicy'>Privacy Policy</Link>
                     </span>{' '}
                     | Developed by{' '}
-                    <a href='https://www.xvreed.com' target='_blank'>
+                    <a href='https://www.fullstaxdev.com' target='_blank'>
                         Xavier Reed
                     </a>
                 </p>

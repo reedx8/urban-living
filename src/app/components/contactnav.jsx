@@ -25,7 +25,7 @@ export default function ContactNav() {
             <div className={styles.contactLinks}>
                 <div className={styles.phoneDiv}>
                     <Image src={phone} width={18} height={'auto'} />
-                    <Link href='tel:+19717073095'>(971) 707-3095</Link>
+                    <Link href='tel:+15033725100'>(503) 372-5100</Link>
                 </div>
                 <p>|</p>
                 <Link

@@ -48,7 +48,7 @@ export default function Contactus() {
                                 alt='Phone icon'
                                 className={styles.icons}
                             />
-                            <Link href='tel:+19717073095'>(971) 707-3095</Link>
+                            <Link href='tel:+15033725100'>(503) 372-5100</Link>
                         </p>
                     </div>
                     <div className={styles.horizontalLine}></div>
@@ -60,7 +60,7 @@ export default function Contactus() {
                         />
                         <div>
                             <a
-                                href='https://maps.app.goo.gl/8uZK1uzbMaG8oCy67'
+                                href='https://maps.app.goo.gl/Fh6Krcm67VyPefay6'
                                 target='_blank'
                                 // rel='noreferrer'
                             >
@@ -81,11 +81,11 @@ export default function Contactus() {
                             className={styles.icons}
                         />
                         <div>
-                            <p>Monday - Friday:</p>
+                            <p>Monday - Sunday:</p>
                             <p>9:00 AM - 5:00 PM</p>
                             <br />
-                            <p>Saturday / Sunday:</p>
-                            <p>CLOSED</p>
+                            {/* <p>Saturday / Sunday:</p> */}
+                            {/* <p>CLOSED</p> */}
                         </div>
                     </div>
                 </div>

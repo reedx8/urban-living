@@ -25,7 +25,7 @@ export default function GalleryTabs() {
                         Photos
                     </button>
                 </div>
-                <div className={styles.tab}>
+                {/* <div className={styles.tab}>
                     <button
                         type='button'
                         className={
@@ -38,8 +38,7 @@ export default function GalleryTabs() {
                     >
                         Videos
                     </button>
-                    {/* <button className={styles.tabButton}>Videos</button> */}
-                </div>
+                </div> */}
             </div>
             {videosTab && (
                 <motion.div

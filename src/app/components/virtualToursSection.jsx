@@ -1,3 +1,5 @@
+// This was used when they still had an apartments.com subscription, and
+// component was referened under src/app/virtualtours/page.jsx. Keeping for now for easy reference.
 'use client';
 import React from 'react';
 import styles from '@/app/virtualtours/virtualtours.module.css';

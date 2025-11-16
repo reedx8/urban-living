@@ -31,7 +31,7 @@ export default function Home() {
                     quality={100}
                 />
                 <Link
-                    href='https://www.apartments.com/urban-living-at-fanno-creek-portland-or/lbtycsg/'
+                    href='https://integrityfirstpropertymanagementllc.managebuilding.com/Resident/rental-application/new'
                     target='_blank'
                 >
                     <button

@@ -57,7 +57,17 @@ export default function Navbar() {
                     >
                         HOME
                     </Link>
-                    <div className={styles.floorplansContainer}>
+                    <Link
+                        href='/floorplans'
+                        className={
+                            currentRoute === '/floorplans'
+                                ? styles.activeLink
+                                : styles.link
+                        }
+                    >
+                        FLOOR PLANS
+                    </Link>
+                    {/* <div className={styles.floorplansContainer}>
                         <button
                             className={styles.floorplansBtn}
                             onClick={() => showFloorplansDropdown()}
@@ -99,7 +109,7 @@ export default function Navbar() {
                                 </Link>
                             </div>
                         )}
-                    </div>
+                    </div> */}
                     <Link
                         href='/gallery'
                         className={
