@@ -73,6 +73,14 @@
     /* background-color: var(--ltgreyBg); */
 }
 
+.modalRow3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-style: italic;
+    /* background-color: var(--ltgreyBg); */
+}
+
 .unitInfo {
     display: flex;
     flex-direction: column;
@@ -162,6 +170,29 @@
     background-color: var(--khaki);
     color: black;
     transition: background-color 0.3s;
+}
+
+.checkAvailButton {
+    background-color: transparent;
+    /* background-color: var(--darkgreen); */
+    color: var(--darkgreen);
+    /* color: white; */
+    /* border: none; */
+    border: 1px solid var(--darkgreen);
+    border-radius: 5px;
+    padding: 10px;
+    cursor: pointer;
+    width: 100%;
+    font-size: 0.85rem;
+    margin-top: 0.3rem;
+}
+
+.checkAvailButton:hover {
+    background-color: var(--khaki);
+    border: 1px solid var(--khaki);
+    color: var(--darkgreen);
+    transition: background-color 0.3s;
+    /* box-shadow: 0 0 30px rgba(0, 0, 0, 0.5); */
 }
 
 .unitHeader {

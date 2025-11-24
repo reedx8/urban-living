@@ -43,7 +43,7 @@ export default function Gallery() {
                     <p>
                         Explore Urban Living at Fanno Creek through our curated
                         photo gallery, showcasing the distinctive appeal of our
-                        Tigard, OR, residence and a glimpse of what awaits you.
+                        Tigard residence and a glimpse of what awaits you.
                     </p>
                 </div>
                 <GalleryTabs />

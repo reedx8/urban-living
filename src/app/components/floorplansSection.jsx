@@ -20,6 +20,7 @@ const units = [
         bed: '1 Bed',
         bath: '1',
         sqft: '505',
+        units: '203, 303',
     },
     {
         id: 1,
@@ -30,6 +31,7 @@ const units = [
         bed: '1 Bed',
         bath: '1',
         sqft: '608',
+        units: '204, 304',
     },
     {
         id: 2,
@@ -40,6 +42,7 @@ const units = [
         bed: '1 Bed',
         bath: '1',
         sqft: '639',
+        units: '205, 305',
     },
     {
         id: 3,
@@ -50,6 +53,7 @@ const units = [
         bed: '1 Bed',
         bath: '1',
         sqft: '513',
+        units: '206, 306',
     },
     {
         id: 4,
@@ -60,6 +64,7 @@ const units = [
         bed: '1 Bed',
         bath: '1',
         sqft: '742',
+        units: '207, 208, 213, 307, 308, 312',
     },
     {
         id: 5,
@@ -70,6 +75,7 @@ const units = [
         bed: '1 Bed',
         bath: '1',
         sqft: '685',
+        units: '209, 309',
     },
     {
         id: 6,
@@ -80,6 +86,7 @@ const units = [
         bed: '1 Bed',
         bath: '1',
         sqft: '470',
+        units: '210, 310',
     },
     {
         id: 7,
@@ -90,6 +97,7 @@ const units = [
         bed: 'Studio',
         bath: '1',
         sqft: '384',
+        units: '211, 311',
     },
     {
         id: 8,
@@ -100,10 +108,55 @@ const units = [
         bed: '1 Bed',
         bath: '1',
         sqft: '742',
+        units: '212',
     },
 ];
 
 export default function FloorplansSection() {
+    const [floorplansTab, setFloorplansTab] = useState(true);
+    // const [mappingTab, setMappingTab] = useState(false);
+
+    // function handleTabClick() {
+    //     setFloorplansTab(!floorplansTab);
+    //     setMappingTab(!mappingTab);
+    // }
+
+    return (
+        <>
+            <div className={styles.headerText}>
+                <p>Pricing and availability subject to change</p>
+            </div>
+            {/* <div className={styles.tabButtons}>
+                <div>
+                    <button
+                        onClick={handleTabClick}
+                        className={
+                            floorplansTab
+                                ? styles.activeTab
+                                : styles.inactiveTab
+                        }
+                    >
+                        Floor Plans
+                    </button>
+                </div>
+                <div>
+                    <button
+                        onClick={handleTabClick}
+                        className={
+                            mappingTab ? styles.activeTab : styles.inactiveTab
+                        }
+                    >
+                        Mapping
+                    </button>
+                </div>
+            </div> */}
+            {floorplansTab && <FloorPlans />}
+            {/* {mappingTab && <Mapping />} */}
+        </>
+    );
+}
+
+function FloorPlans() {
     const [openModal, setOpenModal] = useState(false);
     const [currentUnit, setCurrentUnit] = useState(null);
     // const imageName = '';
@@ -117,12 +170,8 @@ export default function FloorplansSection() {
     function handleClose() {
         setOpenModal(false);
     }
-
     return (
         <>
-            <div className={styles.headerText}>
-                <p>Pricing and availability subject to change</p>
-            </div>
             <div className={styles.floorplansContainer}>
                 {units.map((unit) => (
                     <motion.div
@@ -204,5 +253,125 @@ export default function FloorplansSection() {
                 />
             )}
         </>
+    );
+}
+
+function Mapping() {
+    const [floorLevel, setFloorLevel] = useState('Floor2');
+    function updateFloorLevel(e) {
+        setFloorLevel(e.target.value);
+    }
+    return (
+        <div>
+            {/* <div className={styles.dropdown}>
+                <select>
+                    <option value='Floor2' onClick={updateFloorLevel}>
+                        Floor 2
+                    </option>
+                    <option value='Floor3' onClick={updateFloorLevel}>
+                        Floor 3
+                    </option>
+                </select>
+            </div> */}
+            <div className={styles.table}>
+                <TableHeader />
+                <div className={styles.tableContent}>
+                    <TableRows floorLevel={floorLevel} />
+                </div>
+            </div>
+        </div>
+    );
+}
+
+function TableHeader() {
+    const headers = ['Space', 'Sq Ft', 'Apt #', 'Floor Level'];
+
+    return (
+        <div className={styles.headerRow}>
+            {headers.map((header) => (
+                <p>{header}</p>
+            ))}
+        </div>
+    );
+}
+
+function TableRows({ floorLevel }) {
+    const units = [
+        {
+            name: 'A',
+            sqft: '505',
+            id2: '203',
+            id3: '303',
+            floor: '2',
+        },
+        {
+            name: 'B',
+            sqft: '608',
+            id2: '204',
+            id3: '304',
+            floor: '2',
+        },
+        {
+            name: 'C',
+            sqft: '639',
+            id2: '205',
+            id3: '305',
+            floor: '2',
+        },
+        {
+            name: 'D',
+            sqft: '513',
+            id2: '206',
+            id3: '306',
+            floor: '2',
+        },
+        {
+            name: 'E',
+            sqft: '742',
+            id2: '207, 208, 213',
+            id3: '307, 308, 312, 313',
+            floor: '2',
+        },
+        {
+            name: 'F',
+            sqft: '685',
+            id2: '209',
+            id3: '309',
+            floor: '2',
+        },
+        {
+            name: 'G',
+            sqft: '470',
+            id2: '210',
+            id3: '310',
+            floor: '2',
+        },
+        {
+            name: 'H',
+            sqft: '384',
+            id2: '211',
+            id3: '311',
+            floor: '2',
+        },
+        {
+            name: 'I',
+            sqft: '742',
+            id2: '212',
+            id3: '-',
+            floor: '2',
+        },
+    ];
+    return (
+        <div className={styles.tableRows}>
+            {units.map((unit) => (
+                <div className={styles.tableRow}>
+                    <p>{unit.name}</p>
+                    <p>{unit.sqft}</p>
+                    <p>{floorLevel === 'Floor2' ? unit.id2 : unit.id3}</p>
+                    {/* <p>{floorLevel}</p> */}
+                    <p>{unit.floor}</p>
+                </div>
+            ))}
+        </div>
     );
 }

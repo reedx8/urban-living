@@ -59,4 +59,24 @@
         transition: background-color 0.3s;
         /* box-shadow: 0 0 30px rgba(0, 0, 0, 0.5); */
     }
+
+    .schedTourBtn {
+        background: var(--darkgreen);
+        color: var(--altWhite);
+        /* color: var(--darkgreen); */
+        padding: 0.5rem 1rem;
+        border-radius: 5px;
+        font-weight: 500;
+        font-size: 0.8rem;
+        cursor: pointer;
+        border: 1px solid black;
+        /* transition: background 0.3s; */
+    }
+
+    .schedTourBtn:hover {
+        background-color: var(--khaki);
+        color: black;
+        transition: background-color 0.3s;
+        /* box-shadow: 0 0 30px rgba(0, 0, 0, 0.5); */
+    }
 }

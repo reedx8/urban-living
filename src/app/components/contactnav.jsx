@@ -22,6 +22,9 @@ export default function ContactNav() {
                     12547 SW Main St, Tigard, OR
                 </Link>
             </div>
+            <Link href='/contactus'>
+                <button className={styles.schedTourBtn}>SCHEDULE A TOUR</button>
+            </Link>
             <div className={styles.contactLinks}>
                 <div className={styles.phoneDiv}>
                     <Image src={phone} width={18} height={'auto'} />
@@ -32,7 +35,7 @@ export default function ContactNav() {
                     href='https://integrityfirstpropertymanagementllc.managebuilding.com/Resident/rental-application/new'
                     target='_blank'
                 >
-                    <button className={styles.applyNowBtn}>Apply Now</button>
+                    <button className={styles.applyNowBtn}>APPLY NOW</button>
                 </Link>
             </div>
         </div>

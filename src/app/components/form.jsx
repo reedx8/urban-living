@@ -1,13 +1,29 @@
 'use client';
-import React, { useRef } from 'react';
+import React, { useRef, useState } from 'react';
 import emailjs from '@emailjs/browser';
 import styles from '../styles/form.module.css';
 
 export default function ContactUsForm() {
     const form = useRef();
+    const [formMountTime] = useState(Date.now());
 
     const sendEmail = (e) => {
         e.preventDefault();
+
+        if (form.current.website.value) {
+            // bot protection/prevention
+            return;
+        }
+
+        const timeTaken = Date.now() - formMountTime;
+        if (timeTaken < 8000) {
+            // 3 seconds
+            // console.log('form submitted too quickly');
+            return;
+        }
+
+        // console.log('sent');
+        // return;
 
         emailjs
             .sendForm('service_teuwr73', 'template_0r5vsyv', form.current, {
@@ -28,6 +44,13 @@ export default function ContactUsForm() {
     return (
         <form ref={form} id='form' className={styles.form} onSubmit={sendEmail}>
             <input
+                name='website' // for bot detection
+                type='text'
+                style={{ display: 'none' }}
+                tabIndex='-1'
+                autoComplete='none'
+            />
+            <input
                 name='user_name'
                 type='text'
                 className={styles.feedbackInput}
@@ -43,6 +66,14 @@ export default function ContactUsForm() {
                 className={styles.feedbackInput}
                 placeholder='Email*'
                 required
+                autoCapitalize='none'
+                autoComplete='off'
+            />
+            <input
+                name='phone_number'
+                type='tel'
+                className={styles.feedbackInput}
+                placeholder='Phone number (optional)'
                 autoCapitalize='none'
                 autoComplete='off'
             />

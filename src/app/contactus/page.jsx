@@ -7,6 +7,7 @@ import contactusBanner from '/public/banners/contact-us.png';
 import styles from './contactus.module.css';
 import Link from 'next/link';
 import ContactNav from '@/app/components/contactnav';
+import blackLine from '/public/icons/blackLine.png';
 
 export const metadata = {
     title: 'Urban Living at Fanno Creek | Contact Us',
@@ -27,6 +28,21 @@ export default function Contactus() {
                     className={styles.contactusPic}
                 />
             </section>
+            <div className={styles.introText}>
+                <p>
+                    Please complete this form or call us directly at the number
+                    below to schedule a tour, inquire about availability, or to
+                    learn more about our apartments. We will follow up with you
+                    during office hours.
+                </p>
+                <p></p>
+                <Image
+                    src={blackLine}
+                    alt='black line'
+                    width={80}
+                    height={'auto'}
+                />
+            </div>
             <section className={styles.pageContent}>
                 {/* <iframe
                     src='https://integrityfirstpropertymanagementllc.managebuilding.com/Resident/Public/Contact?hidenav=true'

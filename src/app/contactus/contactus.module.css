@@ -11,6 +11,14 @@
     position: relative;
 }
 
+.introText {
+    /* display: flex; */
+    /* justify-content: center; */
+    margin-top: 2rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
+}
+
 .contactInfoContainer {
     /* Margin for mobile view */
     margin-bottom: 2rem;
@@ -21,7 +29,8 @@
     height: auto;
 }
 .contactFormContainer {
-    margin-top: 50px;
+    /* margin-top: 5px; */
+    /* margin-top: 50px; */
     margin-bottom: 50px;
     /* background-color: #f9f9f9; */
     background-color: #f7f7f7;

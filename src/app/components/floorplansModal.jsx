@@ -8,6 +8,7 @@ import sqftIcon from '/public/icons/dim.png';
 import starIcon from '/public/icons/star.png';
 import pointIcon from '/public/icons/point.png';
 import verticalLine from '/public/icons/verticalLine.png';
+import doubleArrowIcon from '/public/icons/doubleArrow.png';
 import Link from 'next/link';
 import logoOnly from '/public/logoOnly.png';
 import { motion } from 'framer-motion';
@@ -82,6 +83,22 @@ export default function FloorplansModal({ isOpen, onClose, unit }) {
                                 />
                                 <p>{unit.sqft} Sq. Ft.</p>
                             </div>
+                            <div className={styles.modalRow3}>
+                                {/* <Image
+                                    src={sqftIcon}
+                                    alt='sqft icon'
+                                    width={20}
+                                    height={20}
+                                    className={styles.icons}
+                                /> */}
+                                <p
+                                    className={{
+                                        style: 'font-style: italic',
+                                    }}
+                                >
+                                    Apt # {unit.units}
+                                </p>
+                            </div>
                             <h2>Amenities</h2>
                             {unitsWithoutBalconiesAndClosets.includes(
                                 unit.name
@@ -135,14 +152,31 @@ export default function FloorplansModal({ isOpen, onClose, unit }) {
                                 />
                                 Washer / Dryer in unit
                             </p>
-                            <Link href='/contactus' style={{ width: '100%' }}>
-                                <input
-                                    type='button'
-                                    value='CONTACT US'
-                                    className={styles.contactusButton}
-                                    /* Just navigate to contactus page for now */
-                                />
-                            </Link>
+                            <div className={styles.buttonContainer}>
+                                <Link
+                                    href='https://integrityfirstpropertymanagementllc.managebuilding.com/Resident/rental-application/new'
+                                    style={{ width: '100%' }}
+                                    target='_blank'
+                                >
+                                    <input
+                                        type='button'
+                                        value='CHECK AVAILABILITY'
+                                        className={styles.checkAvailButton}
+                                        /* Just navigate to contactus page for now */
+                                    />
+                                </Link>
+                                <Link
+                                    href='/contactus'
+                                    style={{ width: '100%' }}
+                                >
+                                    <input
+                                        type='button'
+                                        value='CONTACT US'
+                                        className={styles.contactusButton}
+                                        /* Just navigate to contactus page for now */
+                                    />
+                                </Link>
+                            </div>
                         </div>
                     </div>
                     <button className={styles.closeModal} onClick={onClose}>

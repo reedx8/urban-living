@@ -8,67 +8,91 @@ const handleDragStart = (e) => e.preventDefault();
 
 const items = [
     <Image
-        src='/carousel/1.jpg'
+        src='/carousel/16-min.png'
         onDragStart={handleDragStart}
         role='presentation'
         width={500}
-        height={300}
+        height={334}
         alt='picture in carousel'
     />,
     <Image
-        src='/carousel/2.jpg'
+        src='/carousel/17-min.jpg'
         onDragStart={handleDragStart}
         role='presentation'
         width={500}
-        height={300}
+        height={334}
         alt='picture in carousel'
     />,
     <Image
-        src='/carousel/3.jpg'
+        src='/carousel/18-min.png'
         onDragStart={handleDragStart}
         role='presentation'
         width={500}
-        height={300}
+        height={334}
         alt='picture in carousel'
     />,
     <Image
-        src='/carousel/4.jpg'
+        src='/carousel/19-min.png'
         onDragStart={handleDragStart}
         role='presentation'
         width={500}
-        height={300}
+        height={334}
         alt='picture in carousel'
     />,
     <Image
-        src='/carousel/5.jpg'
+        src='/carousel/20-min.jpg'
         onDragStart={handleDragStart}
         role='presentation'
         width={500}
-        height={300}
+        height={334}
         alt='picture in carousel'
     />,
     <Image
-        src='/carousel/6.jpg'
+        src='/carousel/11-min.jpg'
         onDragStart={handleDragStart}
         role='presentation'
         width={500}
-        height={300}
+        height={334}
         alt='picture in carousel'
     />,
     <Image
-        src='/carousel/7.jpg'
+        src='/carousel/24-min.jpg'
         onDragStart={handleDragStart}
         role='presentation'
         width={500}
-        height={300}
+        height={334}
         alt='picture in carousel'
     />,
     <Image
-        src='/carousel/8.jpg'
+        src='/carousel/21-min.jpg'
         onDragStart={handleDragStart}
         role='presentation'
         width={500}
-        height={300}
+        height={334}
+        alt='picture in carousel'
+    />,
+    <Image
+        src='/carousel/10-min.jpg'
+        onDragStart={handleDragStart}
+        role='presentation'
+        width={500}
+        height={334}
+        alt='picture in carousel'
+    />,
+    <Image
+        src='/carousel/22-min.jpg'
+        onDragStart={handleDragStart}
+        role='presentation'
+        width={500}
+        height={334}
+        alt='picture in carousel'
+    />,
+    <Image
+        src='/carousel/23-min.jpg'
+        onDragStart={handleDragStart}
+        role='presentation'
+        width={500}
+        height={334}
         alt='picture in carousel'
     />,
 ];

@@ -24,6 +24,33 @@
     margin-bottom: 20px;
 }
 
+.tabButtons {
+    display: flex;
+    justify-content: center;
+    gap: 0.25rem;
+    margin-bottom: 1rem;
+}
+
+.activeTab,
+.inactiveTab {
+    /* background-color: var(--altWhite); */
+    border: none;
+    padding: 0.75rem 1rem;
+    font-size: 0.9rem;
+    cursor: pointer;
+}
+
+.activeTab {
+    background-color: var(--khaki);
+    transition: all 0.5s ease-in-out;
+    color: black;
+}
+.inactiveTab {
+    background-color: var(--altWhite);
+    color: var(--khaki);
+    /* transition: all 0.2s ease-in-out; */
+}
+
 .unitCard {
     display: flex;
     flex-direction: column;
@@ -115,4 +142,33 @@
     height: 20px;
     width: 20px;
     margin-right: 5px;
+}
+
+/* mapping table */
+.table {
+    background-color: var(--altWhite);
+    padding: 1rem;
+    border-radius: 5px;
+    margin-bottom: 2rem;
+}
+
+.headerRow {
+    margin-bottom: 1rem;
+    padding: 0.5rem;
+    border-bottom: 1px solid var(--ltgreyBorder);
+}
+
+.headerRow > p {
+    /* font-size: 1rem; */
+    font-weight: 600;
+}
+
+.tableRow,
+.headerRow {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.tableRow {
+    padding: 0.3rem;
 }
