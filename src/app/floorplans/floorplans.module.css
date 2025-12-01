@@ -59,7 +59,7 @@
     /* margin: 10px; */
     padding: 15px;
     border: 1.5px solid var(--ltgreyBorder);
-    gap: 10px;
+    gap: 5px;
     border-radius: 10px;
     /* width: 300px; */
     /* height: 300px; */
@@ -171,4 +171,9 @@
 
 .tableRow {
     padding: 0.3rem;
+}
+
+.unitNum {
+    font-size: 0.8rem;
+    color: var(--darkgreen);
 }

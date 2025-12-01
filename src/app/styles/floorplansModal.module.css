@@ -38,16 +38,52 @@
         flex-direction: column;
     }
     .unitPic {
-        width: 325px;
+        width: 175px;
+        /* width: 325px; */
         height: auto;
     }
+    /* .unitHeader > h1 {
+        font-size: 1.5rem;
+    }
+
+    .unitInfo > h2 {
+        font-size: 1rem;
+        margin: 0.3rem 0;
+    } */
 }
 
 /* very small screen (iphone se) */
 @media (max-height: 750px) and (max-width: 850px) {
     .unitPic {
+        /* width: 200px; */
         width: 260px;
         height: auto;
+    }
+    .modalContainer {
+        flex-direction: row;
+    }
+    .closeModal {
+        order: 1;
+        align-self: flex-start;
+    }
+    .unitHeader > h1 {
+        font-size: 1.5rem !important;
+    }
+
+    .unitInfo {
+        gap: 2px !important;
+    }
+    .unitInfo > h2 {
+        font-size: 1.2rem !important;
+        margin: 0.3rem 0;
+    }
+    .modalRow,
+    .modalRow2 {
+        font-size: 0.9rem !important;
+    }
+    .amenitiesText,
+    .specialAmenetie {
+        font-size: 0.9rem !important;
     }
 }
 
@@ -59,33 +95,23 @@
     gap: 1rem;
     box-shadow: 0 10px 4px rgba(0, 0, 0, 0.1);
 }
-
-.modalRow {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    /* background-color: var(--ltgreyBg); */
-}
+.modalRow,
 .modalRow2 {
     display: flex;
-    justify-content: center;
     align-items: center;
+    justify-content: center;
     /* background-color: var(--ltgreyBg); */
 }
 
-.modalRow3 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+/* .modalRow3 {
     font-style: italic;
-    /* background-color: var(--ltgreyBg); */
-}
+} */
 
 .unitInfo {
     display: flex;
     flex-direction: column;
-    /* gap: 10px; */
-    justify-content: space-between;
+    gap: 5px;
+    /* justify-content: space-between; */
 }
 
 .unitHeader > h1 {
@@ -198,5 +224,11 @@
 .unitHeader {
     display: flex;
     justify-content: space-between;
+    align-items: center;
+}
+
+.amenitiesText {
+    /* font-style: italic; */
+    display: flex;
     align-items: center;
 }

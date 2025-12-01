@@ -20,7 +20,14 @@ const units = [
         bed: '1 Bed',
         bath: '1',
         sqft: '505',
-        units: '203, 303',
+        num: '203, 303',
+        amenities: [
+            'Fanno Creek views',
+            'Washer / dryer in unit',
+            'Dedicated heating & cooling system',
+            'Noise controlled windows & walls',
+            'High ceilings',
+        ],
     },
     {
         id: 1,
@@ -31,7 +38,14 @@ const units = [
         bed: '1 Bed',
         bath: '1',
         sqft: '608',
-        units: '204, 304',
+        num: '204, 304',
+        amenities: [
+            'Fanno Creek views',
+            'Washer / dryer in unit',
+            'Dedicated heating & cooling system',
+            'Noise controlled windows & walls',
+            'High ceilings',
+        ],
     },
     {
         id: 2,
@@ -42,7 +56,14 @@ const units = [
         bed: '1 Bed',
         bath: '1',
         sqft: '639',
-        units: '205, 305',
+        num: '205, 305',
+        amenities: [
+            'Fanno Creek views',
+            'Washer / dryer in unit',
+            'Dedicated heating & cooling system',
+            'Noise controlled windows & walls',
+            'High ceilings',
+        ],
     },
     {
         id: 3,
@@ -53,7 +74,13 @@ const units = [
         bed: '1 Bed',
         bath: '1',
         sqft: '513',
-        units: '206, 306',
+        num: '206, 306',
+        amenities: [
+            'Washer / dryer in unit',
+            'Dedicated heating & cooling system',
+            'Noise controlled windows & walls',
+            'High ceilings',
+        ],
     },
     {
         id: 4,
@@ -64,7 +91,13 @@ const units = [
         bed: '1 Bed',
         bath: '1',
         sqft: '742',
-        units: '207, 208, 213, 307, 308, 312',
+        num: '207, 208, 213, 307, 308, 312',
+        amenities: [
+            'Washer / dryer in unit',
+            'Dedicated heating & cooling system',
+            'Noise controlled windows & walls',
+            'High ceilings',
+        ],
     },
     {
         id: 5,
@@ -75,7 +108,13 @@ const units = [
         bed: '1 Bed',
         bath: '1',
         sqft: '685',
-        units: '209, 309',
+        num: '209, 309',
+        amenities: [
+            'Washer / dryer in unit',
+            'Dedicated heating & cooling system',
+            'Noise controlled windows & walls',
+            'High ceilings',
+        ],
     },
     {
         id: 6,
@@ -86,7 +125,13 @@ const units = [
         bed: '1 Bed',
         bath: '1',
         sqft: '470',
-        units: '210, 310',
+        num: '210, 310',
+        amenities: [
+            'Washer / dryer in unit',
+            'Dedicated heating & cooling system',
+            'Noise controlled windows & walls',
+            'High ceilings',
+        ],
     },
     {
         id: 7,
@@ -97,7 +142,13 @@ const units = [
         bed: 'Studio',
         bath: '1',
         sqft: '384',
-        units: '211, 311',
+        num: '211, 311',
+        amenities: [
+            'Washer / dryer in unit',
+            'Dedicated heating & cooling system',
+            'Noise controlled windows & walls',
+            'High ceilings',
+        ],
     },
     {
         id: 8,
@@ -108,7 +159,13 @@ const units = [
         bed: '1 Bed',
         bath: '1',
         sqft: '742',
-        units: '212',
+        num: '212',
+        amenities: [
+            'Washer / dryer in unit',
+            'Dedicated heating & cooling system',
+            'Noise controlled windows & walls',
+            'High ceilings',
+        ],
     },
 ];
 
@@ -183,6 +240,7 @@ function FloorPlans() {
                     >
                         <div key={unit.name} className={styles.unitCard}>
                             <h2>{unit.name}</h2>
+                            <p className={styles.unitNum}>Apt # {unit.num}</p>
                             <Image
                                 src={unit.images}
                                 alt={unit.name}
@@ -256,122 +314,112 @@ function FloorPlans() {
     );
 }
 
-function Mapping() {
-    const [floorLevel, setFloorLevel] = useState('Floor2');
-    function updateFloorLevel(e) {
-        setFloorLevel(e.target.value);
-    }
-    return (
-        <div>
-            {/* <div className={styles.dropdown}>
-                <select>
-                    <option value='Floor2' onClick={updateFloorLevel}>
-                        Floor 2
-                    </option>
-                    <option value='Floor3' onClick={updateFloorLevel}>
-                        Floor 3
-                    </option>
-                </select>
-            </div> */}
-            <div className={styles.table}>
-                <TableHeader />
-                <div className={styles.tableContent}>
-                    <TableRows floorLevel={floorLevel} />
-                </div>
-            </div>
-        </div>
-    );
-}
+// function Mapping() {
+//     const [floorLevel, setFloorLevel] = useState('Floor2');
+//     function updateFloorLevel(e) {
+//         setFloorLevel(e.target.value);
+//     }
+//     return (
+//         <div>
+//             <div className={styles.table}>
+//                 <TableHeader />
+//                 <div className={styles.tableContent}>
+//                     <TableRows floorLevel={floorLevel} />
+//                 </div>
+//             </div>
+//         </div>
+//     );
+// }
 
-function TableHeader() {
-    const headers = ['Space', 'Sq Ft', 'Apt #', 'Floor Level'];
+// function TableHeader() {
+//     const headers = ['Space', 'Sq Ft', 'Apt #', 'Floor Level'];
 
-    return (
-        <div className={styles.headerRow}>
-            {headers.map((header) => (
-                <p>{header}</p>
-            ))}
-        </div>
-    );
-}
+//     return (
+//         <div className={styles.headerRow}>
+//             {headers.map((header) => (
+//                 <p>{header}</p>
+//             ))}
+//         </div>
+//     );
+// }
 
-function TableRows({ floorLevel }) {
-    const units = [
-        {
-            name: 'A',
-            sqft: '505',
-            id2: '203',
-            id3: '303',
-            floor: '2',
-        },
-        {
-            name: 'B',
-            sqft: '608',
-            id2: '204',
-            id3: '304',
-            floor: '2',
-        },
-        {
-            name: 'C',
-            sqft: '639',
-            id2: '205',
-            id3: '305',
-            floor: '2',
-        },
-        {
-            name: 'D',
-            sqft: '513',
-            id2: '206',
-            id3: '306',
-            floor: '2',
-        },
-        {
-            name: 'E',
-            sqft: '742',
-            id2: '207, 208, 213',
-            id3: '307, 308, 312, 313',
-            floor: '2',
-        },
-        {
-            name: 'F',
-            sqft: '685',
-            id2: '209',
-            id3: '309',
-            floor: '2',
-        },
-        {
-            name: 'G',
-            sqft: '470',
-            id2: '210',
-            id3: '310',
-            floor: '2',
-        },
-        {
-            name: 'H',
-            sqft: '384',
-            id2: '211',
-            id3: '311',
-            floor: '2',
-        },
-        {
-            name: 'I',
-            sqft: '742',
-            id2: '212',
-            id3: '-',
-            floor: '2',
-        },
-    ];
-    return (
-        <div className={styles.tableRows}>
-            {units.map((unit) => (
-                <div className={styles.tableRow}>
-                    <p>{unit.name}</p>
-                    <p>{unit.sqft}</p>
-                    <p>{floorLevel === 'Floor2' ? unit.id2 : unit.id3}</p>
-                    {/* <p>{floorLevel}</p> */}
-                    <p>{unit.floor}</p>
-                </div>
-            ))}
-        </div>
-    );
-}
+// function TableRows({ floorLevel }) {
+//     const units = [
+//         {
+//             name: 'A',
+//             sqft: '505',
+//             id2: '203',
+//             id3: '303',
+//             floor: '2',
+//         },
+//         {
+//             name: 'B',
+//             sqft: '608',
+//             id2: '204',
+//             id3: '304',
+//             floor: '2',
+//         },
+//         {
+//             name: 'C',
+//             sqft: '639',
+//             id2: '205',
+//             id3: '305',
+//             floor: '2',
+//         },
+//         {
+//             name: 'D',
+//             sqft: '513',
+//             id2: '206',
+//             id3: '306',
+//             floor: '2',
+//         },
+//         {
+//             name: 'E',
+//             sqft: '742',
+//             id2: '207, 208, 213',
+//             id3: '307, 308, 312, 313',
+//             floor: '2',
+//         },
+//         {
+//             name: 'F',
+//             sqft: '685',
+//             id2: '209',
+//             id3: '309',
+//             floor: '2',
+//         },
+//         {
+//             name: 'G',
+//             sqft: '470',
+//             id2: '210',
+//             id3: '310',
+//             floor: '2',
+//         },
+//         {
+//             name: 'H',
+//             sqft: '384',
+//             id2: '211',
+//             id3: '311',
+//             floor: '2',
+//         },
+//         {
+//             name: 'I',
+//             sqft: '742',
+//             id2: '212',
+//             id3: '-',
+//             floor: '2',
+//         },
+//     ];
+//     return (
+//         <div className={styles.tableRows}>
+//             {units.map((unit) => (
+//                 <div className={styles.tableRow}>
+//                     <p>{unit.name}</p>
+//                     <p>{unit.sqft}</p>
+//                     <p>{floorLevel === 'Floor2' ? unit.id2 : unit.id3}</p>
+//                     {/* <p>{floorLevel}</p> */}
+//                     <p>{unit.floor}</p>
+//                 </div>
+//             ))}
+//         </div>
+//     );
+// }

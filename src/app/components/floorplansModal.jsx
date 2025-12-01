@@ -19,7 +19,7 @@ export default function FloorplansModal({ isOpen, onClose, unit }) {
     const unitsWithDens = ['Space E', 'Space I'];
 
     return (
-        <div className={styles.modalBg}>
+        <div className={styles.modalBg} onClick={onClose}>
             <motion.div
                 initial={{ y: 60, opacity: 0 }}
                 animate={{ y: 0, opacity: 1 }}
@@ -83,14 +83,7 @@ export default function FloorplansModal({ isOpen, onClose, unit }) {
                                 />
                                 <p>{unit.sqft} Sq. Ft.</p>
                             </div>
-                            <div className={styles.modalRow3}>
-                                {/* <Image
-                                    src={sqftIcon}
-                                    alt='sqft icon'
-                                    width={20}
-                                    height={20}
-                                    className={styles.icons}
-                                /> */}
+                            {/* <div className={styles.modalRow3}>
                                 <p
                                     className={{
                                         style: 'font-style: italic',
@@ -98,7 +91,7 @@ export default function FloorplansModal({ isOpen, onClose, unit }) {
                                 >
                                     Apt # {unit.units}
                                 </p>
-                            </div>
+                            </div> */}
                             <h2>Amenities</h2>
                             {unitsWithoutBalconiesAndClosets.includes(
                                 unit.name
@@ -131,7 +124,7 @@ export default function FloorplansModal({ isOpen, onClose, unit }) {
                             {unitsWithoutBalconiesAndClosets.includes(
                                 unit.name
                             ) ? null : (
-                                <p>
+                                <p className={styles.amenitiesText}>
                                     <Image
                                         src={pointIcon}
                                         width={15}
@@ -142,16 +135,18 @@ export default function FloorplansModal({ isOpen, onClose, unit }) {
                                     Closet
                                 </p>
                             )}
-                            <p>
-                                <Image
-                                    src={pointIcon}
-                                    width={15}
-                                    height={15}
-                                    alt='list point'
-                                    className={styles.pointIcon}
-                                />
-                                Washer / Dryer in unit
-                            </p>
+                            {unit.amenities.map((amenity) => (
+                                <p className={styles.amenitiesText}>
+                                    <Image
+                                        src={pointIcon}
+                                        width={15}
+                                        height={15}
+                                        alt='list point'
+                                        className={styles.pointIcon}
+                                    />
+                                    {amenity}
+                                </p>
+                            ))}
                             <div className={styles.buttonContainer}>
                                 <Link
                                     href='https://integrityfirstpropertymanagementllc.managebuilding.com/Resident/rental-application/new'
