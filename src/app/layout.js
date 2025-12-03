@@ -1,3 +1,4 @@
+import Banner from './components/banner';
 import { Archivo, Josefin_Sans } from 'next/font/google';
 import './globals.css';
 import Navbar from './components/navbar';
@@ -34,6 +35,7 @@ export default function RootLayout({ children }) {
                 </Script>
             </head>
             <body className={customFont.className}>
+                <Banner />
                 <Navbar />
                 {children}
                 <Footer />
