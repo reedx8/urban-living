@@ -1,0 +1,23 @@
+.bannerContainer {
+    background-color: var(--altWhite);
+    color: var(--darkgreen);
+    padding: 0.8rem;
+    text-align: center;
+    font-size: 0.7rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.bannerContainerHidden {
+    display: none;
+}
+
+.bannerClose {
+    position: absolute;
+    right: 0;
+    margin-right: 1rem;
+}
+
+.bannerClose:hover {
+    cursor: pointer;
+}
